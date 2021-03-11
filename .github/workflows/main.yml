@@ -22,11 +22,18 @@ jobs:
          unzip paper-sources.jar -d paper-sources
          mkdir paper
          javadoc -doclet jdiff.JDiff -docletpath jdiff-1.1.0/jdiff.jar -apiname Paper -apidir paper -sourcepath paper-sources io.papermc org.bukkit org.spigotmc com.destroystokyo
+         sed -i 's/\& org.bukkit.Keyed/\&amp; org.bukkit.Keyed/g' paper/Paper.xml
          # gen xml for spigot
          wget https://hub.spigotmc.org/nexus/service/local/repositories/snapshots/content/org/spigotmc/spigot-api/1.16.5-R0.1-SNAPSHOT/spigot-api-1.16.5-R0.1-20210308.215427-28-sources.jar -O spigot-sources.jar
          unzip spigot-sources.jar -d spigot-sources
          mkdir spigot
-         javadoc -doclet jdiff.JDiff -docletpath jdiff-1.1.0/jdiff.jar -apiname Spigot -apidir spigot -sourcepath spigot-sources org.bukkit org.spigotmc 
+         javadoc -doclet jdiff.JDiff -docletpath jdiff-1.1.0/jdiff.jar -apiname Spigot -apidir spigot -sourcepath spigot-sources org.bukkit org.spigotmc
+         sed -i 's/\& org.bukkit.Keyed/\&amp; org.bukkit.Keyed/g' spigot/Spigot.xml
          # diff
-         unzip jdiff-1.1.0/xerces.jar -d jdiff-1.1.0/xerces
+         mkdir output
          javadoc -doclet jdiff.JDiff -docletpath jdiff-1.1.0/jdiff.jar:jdiff-1.1.0/xerces.jar -oldapi Spigot -oldapidir spigot -newapi Paper -newapidir paper -javadocold https://hub.spigotmc.org/javadocs/bukkit/ -javadocnew https://papermc.io/javadocs/paper/1.16/ -doctitle "PAPER TEST" -stats -d output -sourcepath paper-sources io.papermc org.bukkit org.spigotmc com.destroystokyo
+     - name: Deploy
+       uses: JamesIves/github-pages-deploy-action@4.1.0
+       with:
+         branch: gh-pages
+         folder: output
