@@ -12,5 +12,21 @@ jobs:
        uses: actions/setup-java@v1
        with:
          java-version: '8'
-     - name: Custom
-       uses: ./.github/actions/custom
+     - name: Script
+       run: | 
+         # download
+         wget https://pilotfiber.dl.sourceforge.net/project/javadiff/javadiff/jdiff%201.1.0/jdiff-1.1.0.zip
+         unzip jdiff-1.1.0.zip
+         # gen xml for paper
+         wget https://papermc.io/repo/repository/maven-snapshots/com/destroystokyo/paper/paper-api/1.16.5-R0.1-SNAPSHOT/paper-api-1.16.5-R0.1-20210310.211847-127-sources.jar -O paper-sources.jar
+         unzip paper-sources.jar -d paper-sources
+         mkdir paper
+         javadoc -doclet jdiff.JDiff -docletpath jdiff-1.1.0/jdiff.jar -apiname Paper -apidir paper -sourcepath paper-sources io.papermc org.bukkit org.spigotmc com.destroystokyo
+         # gen xml for spigot
+         wget https://hub.spigotmc.org/nexus/service/local/repositories/snapshots/content/org/spigotmc/spigot-api/1.16.5-R0.1-SNAPSHOT/spigot-api-1.16.5-R0.1-20210308.215427-28-sources.jar -O spigot-sources.jar
+         unzip spigot-sources.jar -d spigot-sources
+         mkdir spigot
+         javadoc -doclet jdiff.JDiff -docletpath jdiff-1.1.0/jdiff.jar -apiname Spigot -apidir spigot -sourcepath spigot-sources org.bukkit org.spigotmc 
+         # diff
+         unzip jdiff-1.1.0/xerces.jar -d jdiff-1.1.0/xerces
+         javadoc -classpath jdiff-1.1.0/xerces/:jdiff-1.1.0/:jdiff-1.1.0/xerces.jar -doclet jdiff.JDiff -docletpath jdiff-1.1.0/jdiff.jar -oldapi Spigot -oldapidir spigot -newapi Paper -newapidir paper -javadocold https://hub.spigotmc.org/javadocs/bukkit/ -javadocnew https://papermc.io/javadocs/paper/1.16/ -doctitle "PAPER TEST" -stats -d output -sourcepath paper-sources io.papermc org.bukkit org.spigotmc com.destroystokyo
