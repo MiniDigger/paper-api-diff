@@ -1,9 +1,21 @@
 #!/usr/bin/env bash
 
 set -euo pipefail
-
-jdiff_version='1.1.0'
 set -x
+
+readonly jdiff_version='1.1.0'
+readonly spigot_packages=(
+  org.bukkit
+  org.spigotmc
+)
+readonly paper_packages=(
+  "${spigot_packages[@]}"
+  com.destroystokyo.paper
+  io.papermc.paper
+)
+readonly topdir="$(git rev-parse --show-toplevel 2>/dev/null || dirname "${0}")"
+readonly workdir="${topdir}/work"
+readonly outdir="${topdir}/output"
 
 get_maven_sources() {
   local -r host="${1?Missing host}"
@@ -30,7 +42,15 @@ get_maven_sources() {
   curl "${curl_args[@]}"
 }
 
+# cleanup directories
+for directory in "${workdir}" "${outdir}"; do
+  if [ -d "${directory}" ]; then
+    rm -r "${directory}"
+  fi
+done
 
+mkdir "${workdir}"
+cd "${workdir}"
 
 # download requirements
 curl -L -o jdiff.zip https://pilotfiber.dl.sourceforge.net/project/javadiff/javadiff/jdiff%20"${jdiff_version}"/jdiff-"${jdiff_version}".zip
@@ -40,15 +60,31 @@ unzip jdiff.zip
 get_maven_sources 'https://papermc.io/repo' 3 'com.destroystokyo.paper' 'paper-api' paper-sources.jar
 unzip paper-sources.jar -d paper-sources
 mkdir paper
-javadoc -doclet jdiff.JDiff -docletpath jdiff-"${jdiff_version}"/jdiff.jar -apiname Paper -apidir paper -sourcepath paper-sources io.papermc.paper org.bukkit org.spigotmc com.destroystokyo.paper
+javadoc -doclet jdiff.JDiff -docletpath jdiff-"${jdiff_version}"/jdiff.jar -apiname Paper -apidir paper -sourcepath paper-sources "${paper_packages[@]}"
 sed -i 's/\& org.bukkit.Keyed/\&amp; org.bukkit.Keyed/g' paper/Paper.xml
 # gen xml for spigot
 get_maven_sources 'https://hub.spigotmc.org/nexus' 2 'org.spigotmc' 'spigot-api' spigot-sources.jar
 unzip spigot-sources.jar -d spigot-sources
 mkdir spigot
-javadoc -doclet jdiff.JDiff -docletpath jdiff-"${jdiff_version}"/jdiff.jar -apiname Spigot -apidir spigot -sourcepath spigot-sources org.bukkit org.spigotmc
+javadoc -doclet jdiff.JDiff -docletpath jdiff-"${jdiff_version}"/jdiff.jar -apiname Spigot -apidir spigot -sourcepath spigot-sources "${spigot_packages[@]}"
 sed -i 's/\& org.bukkit.Keyed/\&amp; org.bukkit.Keyed/g' spigot/Spigot.xml
+# get latest Paper version
+paper_version="$(curl -s 'https://papermc.io/api/v2/projects/paper' | jq -r '.version_groups | max_by(. | split(".") | map(tonumber))')"
 # diff
-mkdir output
-javadoc -doclet jdiff.JDiff -docletpath jdiff-"${jdiff_version}"/jdiff.jar:jdiff-"${jdiff_version}"/xerces.jar -oldapi Spigot -oldapidir spigot -newapi Paper -newapidir paper -javadocold https://hub.spigotmc.org/javadocs/bukkit/ -javadocnew https://papermc.io/javadocs/paper/1.16/ -doctitle "PAPER TEST" -stats -d output -sourcepath paper-sources io.papermc.paper org.bukkit org.spigotmc com.destroystokyo.paper
-
+mkdir "${outdir}"
+readonly javadoc_args=(
+  -doclet jdiff.JDiff
+  -docletpath "jdiff-${jdiff_version}/jdiff.jar:jdiff-${jdiff_version}/xerces.jar"
+  -oldapi Spigot
+  -oldapidir spigot
+  -newapi Paper
+  -newapidir paper
+  -javadocold "https://hub.spigotmc.org/javadocs/bukkit/"
+  -javadocnew "https://papermc.io/javadocs/paper/${paper_version}/"
+  -doctitle "PAPER TEST"
+  -stats
+  -d "${outdir}"
+  -sourcepath paper-sources
+  "${paper_packages[@]}"
+)
+javadoc "${javadoc_args[@]}"

@@ -1,21 +1,21 @@
 name: Build
-on: 
+on:
   workflow_dispatch:
 
 jobs:
   job:
-     runs-on: ubuntu-latest
-     steps: 
-     - name: Checkout
-       uses: actions/checkout@v1
-     - name: Setup Java
-       uses: actions/setup-java@v1
-       with:
-         java-version: '8'
-     - name: Script
-       run: ./generate-diff.sh
-     - name: Deploy
-       uses: JamesIves/github-pages-deploy-action@4.1.0
-       with:
-         branch: gh-pages
-         folder: output
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+    - name: Setup Java
+      uses: actions/setup-java@v1
+      with:
+        java-version: '8'
+    - name: Script
+      run: ./generate-diff.sh
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@4.1.0
+      with:
+        branch: gh-pages
+        folder: output
