@@ -520,6 +520,12 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.Material.getItemRarity_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.Material.getTranslationKey_added()"/>
   <text>
     InsertCommentsHere
@@ -953,6 +959,18 @@
 </comment>
 <comment>
   <identifier id="org.bukkit.UnsafeValues.deserializeItem_added(byte[])"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.UnsafeValues.getItemRarity_added(org.bukkit.Material)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.UnsafeValues.getItemStackRarity_added(org.bukkit.inventory.ItemStack)"/>
   <text>
     InsertCommentsHere
   </text>
