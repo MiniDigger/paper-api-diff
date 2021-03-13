@@ -60,6 +60,7 @@ unzip jdiff.zip
 get_maven_sources 'https://papermc.io/repo' 3 'com.destroystokyo.paper' 'paper-api' paper-sources.jar
 unzip paper-sources.jar -d paper-sources
 mkdir paper
+echo "package io.papermc.paper;" > paper-sources/io/papermc/paper/package-info.java
 javadoc -doclet jdiff.JDiff -docletpath jdiff-"${jdiff_version}"/jdiff.jar -apiname Paper -apidir paper -sourcepath paper-sources "${paper_packages[@]}"
 sed -i 's/\& org.bukkit.Keyed/\&amp; org.bukkit.Keyed/g' paper/Paper.xml
 # gen xml for spigot
