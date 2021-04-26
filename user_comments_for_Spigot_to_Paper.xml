@@ -958,6 +958,18 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.UnsafeValues.colorDownsamplingGsonComponentSerializer_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.UnsafeValues.componentFlattener_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.UnsafeValues.deserializeItem_added(byte[])"/>
   <text>
     InsertCommentsHere
@@ -1012,6 +1024,12 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.UnsafeValues.gsonComponentSerializer_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.UnsafeValues.isLegacyPlugin_added(org.bukkit.plugin.Plugin)"/>
   <text>
     InsertCommentsHere
@@ -1031,6 +1049,12 @@
 </comment>
 <comment>
   <identifier id="org.bukkit.UnsafeValues.nextEntityId_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.UnsafeValues.plainComponentSerializer_added()"/>
   <text>
     InsertCommentsHere
   </text>
@@ -1097,6 +1121,18 @@
 </comment>
 <comment>
   <identifier id="org.bukkit.World.createExplosion_added(org.bukkit.entity.Entity, org.bukkit.Location, float, boolean, boolean)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.doesBedWork_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.doesRespawnAnchorWork_added()"/>
   <text>
     InsertCommentsHere
   </text>
@@ -1246,6 +1282,12 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.World.getCoordinateScale_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.World.getEntityCount_added()"/>
   <text>
     InsertCommentsHere
@@ -1277,6 +1319,12 @@
 </comment>
 <comment>
   <identifier id="org.bukkit.World.getHighestBlockYAt_added(org.bukkit.Location, com.destroystokyo.paper.HeightmapType)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.getInfiniburn_added()"/>
   <text>
     InsertCommentsHere
   </text>
@@ -1432,6 +1480,24 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.World.hasBedrockCeiling_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.hasRaids_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.hasSkylight_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.World.isChunkGenerated_added(long)"/>
   <text>
     InsertCommentsHere
@@ -1439,6 +1505,42 @@
 </comment>
 <comment>
   <identifier id="org.bukkit.World.isDayTime_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.isFixedTime_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.isNatural_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.isPiglinSafe_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.isUltrawarm_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.locateNearestBiome_added(org.bukkit.Location, org.bukkit.block.Biome, int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.locateNearestBiome_added(org.bukkit.Location, org.bukkit.block.Biome, int, int)"/>
   <text>
     InsertCommentsHere
   </text>

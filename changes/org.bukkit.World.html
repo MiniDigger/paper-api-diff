@@ -129,6 +129,24 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.doesBedWork_added()"></A>
+  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/World.html#doesBedWork()" target="_top"><tt>doesBedWork</tt></A>()</nobr>
+  </TD>
+  <TD VALIGN="TOP">Checks if beds work
+
+ </TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.doesRespawnAnchorWork_added()"></A>
+  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/World.html#doesRespawnAnchorWork()" target="_top"><tt>doesRespawnAnchorWork</tt></A>()</nobr>
+  </TD>
+  <TD VALIGN="TOP">Checks if respawn anchors work
+
+ </TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getBlockAtKey_added(long)"></A>
   <nobr><code>Block</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/World.html#getBlockAtKey(long)" target="_top"><tt>getBlockAtKey</tt></A>(<code>long</code>)</nobr>
   </TD>
@@ -359,6 +377,13 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.getCoordinateScale_added()"></A>
+  <nobr><code>double</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/World.html#getCoordinateScale()" target="_top"><tt>getCoordinateScale</tt></A>()</nobr>
+  </TD>
+  <TD VALIGN="TOP">Gets the coordinate scaling of this world.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getEntity_added(java.util.UUID)"></A>
   <nobr><code>Entity</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/World.html#getEntity(java.util.UUID)" target="_top"><tt>getEntity</tt></A>(<code>UUID</code>)</nobr>
   </TD>
@@ -400,6 +425,13 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/
   <nobr><code>int</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/World.html#getHighestBlockYAt(int, int, com.destroystokyo.paper.HeightmapType)" target="_top"><tt>getHighestBlockYAt</tt></A>(<code>int,</nobr> int<nobr>,</nobr> HeightmapType<nobr><nobr></code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Returns the highest block's y-coordinate at the specified block coordinates that match the specified heightmap's conditions.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.getInfiniburn_added()"></A>
+  <nobr><code>Collection&lt;Material&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/World.html#getInfiniburn()" target="_top"><tt>getInfiniburn</tt></A>()</nobr>
+  </TD>
+  <TD VALIGN="TOP">Gets the collection of materials that burn infinitely in this world.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
@@ -600,6 +632,33 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.hasBedrockCeiling_added()"></A>
+  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/World.html#hasBedrockCeiling()" target="_top"><tt>hasBedrockCeiling</tt></A>()</nobr>
+  </TD>
+  <TD VALIGN="TOP">Checks if the world has a bedrock ceiling
+
+ </TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.hasRaids_added()"></A>
+  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/World.html#hasRaids()" target="_top"><tt>hasRaids</tt></A>()</nobr>
+  </TD>
+  <TD VALIGN="TOP">Checks if this world supports raids
+
+ </TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.hasSkylight_added()"></A>
+  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/World.html#hasSkylight()" target="_top"><tt>hasSkylight</tt></A>()</nobr>
+  </TD>
+  <TD VALIGN="TOP">Checks if the world has skylight access
+
+ </TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.isChunkGenerated_added(long)"></A>
   <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/World.html#isChunkGenerated(long)" target="_top"><tt>isChunkGenerated</tt></A>(<code>long</code>)</nobr>
   </TD>
@@ -617,6 +676,62 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.isFixedTime_added()"></A>
+  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/World.html#isFixedTime()" target="_top"><tt>isFixedTime</tt></A>()</nobr>
+  </TD>
+  <TD VALIGN="TOP">Checks if this world has a fixed time
+
+ </TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.isNatural_added()"></A>
+  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/World.html#isNatural()" target="_top"><tt>isNatural</tt></A>()</nobr>
+  </TD>
+  <TD VALIGN="TOP">Checks if the world is natural.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.isPiglinSafe_added()"></A>
+  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/World.html#isPiglinSafe()" target="_top"><tt>isPiglinSafe</tt></A>()</nobr>
+  </TD>
+  <TD VALIGN="TOP">Checks if piglins will turn into Zombified Piglins in this world
+
+ </TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.isUltrawarm_added()"></A>
+  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/World.html#isUltrawarm()" target="_top"><tt>isUltrawarm</tt></A>()</nobr>
+  </TD>
+  <TD VALIGN="TOP">Checks if the world:
+ <ul>
+     <li>evaporates water</li>
+     <li>dries sponges</li>
+     <li>has lava spread faster and further</li>
+ </ul>
+
+ </TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.locateNearestBiome_added(org.bukkit.Location, org.bukkit.block.Biome, int)"></A>
+  <nobr><code>Location</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/World.html#locateNearestBiome(org.bukkit.Location, org.bukkit.block.Biome, int)" target="_top"><tt>locateNearestBiome</tt></A>(<code>Location,</nobr> Biome<nobr>,</nobr> int<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD VALIGN="TOP">Locates the nearest biome based on an origin, biome type, and radius to search.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.locateNearestBiome_added(org.bukkit.Location, org.bukkit.block.Biome, int, int)"></A>
+  <nobr><code>Location</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/World.html#locateNearestBiome(org.bukkit.Location, org.bukkit.block.Biome, int, int)" target="_top"><tt>locateNearestBiome</tt></A>(<code>Location,</nobr> Biome<nobr>,</nobr> int<nobr>,</nobr> int<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD VALIGN="TOP">Locates the nearest biome based on an origin, biome type, and radius to search
+ and step
+
+ </TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.setNoTickViewDistance_added(int)"></A>
   <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/World.html#setNoTickViewDistance(int)" target="_top"><tt>setNoTickViewDistance</tt></A>(<code>int</code>)</nobr>
   </TD>
@@ -628,6 +743,13 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/
   <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/World.html#setViewDistance(int)" target="_top"><tt>setViewDistance</tt></A>(<code>int</code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Sets the view distance for this world.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.spawn_added(org.bukkit.Location, java.lang.Class<T>, org.bukkit.util.Consumer<T>, org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason)"></A>
+  <nobr><code>Entity</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/World.html#spawn(org.bukkit.Location, java.lang.Class<T>, org.bukkit.util.Consumer<T>, org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason)" target="_top"><tt>spawn</tt></A>(<code>Location,</nobr> Class&lt;T&gt;<nobr>,</nobr> Consumer&lt;T&gt;<nobr>,</nobr> SpawnReason<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD>&nbsp;</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
@@ -650,13 +772,6 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/
   </TD>
   <TD VALIGN="TOP">Spawn an entity of a specific class at the given <A HREF="https://papermc.io/javadocs/paper/1.16/Location.html"><TT>Location</TT></A>, with
  the supplied function run before the entity is added to the world.</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="org.bukkit.World.spawn_added(org.bukkit.Location, java.lang.Class<T>, org.bukkit.util.Consumer<T>, org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason)"></A>
-  <nobr><code>Entity</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/World.html#spawn(org.bukkit.Location, java.lang.Class<T>, org.bukkit.util.Consumer<T>, org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason)" target="_top"><tt>spawn</tt></A>(<code>Location,</nobr> Class&lt;T&gt;<nobr>,</nobr> Consumer&lt;T&gt;<nobr>,</nobr> SpawnReason<nobr><nobr></code>)</nobr>
-  </TD>
-  <TD>&nbsp;</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
