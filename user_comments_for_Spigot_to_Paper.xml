@@ -1060,6 +1060,12 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.UnsafeValues.isValidRepairItemStack_added(org.bukkit.inventory.ItemStack, org.bukkit.inventory.ItemStack)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.UnsafeValues.legacyComponentSerializer_added()"/>
   <text>
     InsertCommentsHere
