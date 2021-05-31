@@ -46,6 +46,12 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.Bukkit.broadcast_added(net.kyori.adventure.text.Component)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.Bukkit.broadcast_added(net.kyori.adventure.text.Component, java.lang.String)"/>
   <text>
     InsertCommentsHere
@@ -526,6 +532,12 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.Material.getItemAttributes_added(org.bukkit.inventory.EquipmentSlot)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.Material.getItemRarity_added()"/>
   <text>
     InsertCommentsHere
@@ -701,6 +713,12 @@
 </comment>
 <comment>
   <identifier id="org.bukkit.Server.broadcast_added(java.lang.String, java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Server.broadcast_added(net.kyori.adventure.text.Component)"/>
   <text>
     InsertCommentsHere
   </text>
@@ -983,6 +1001,12 @@
 </comment>
 <comment>
   <identifier id="org.bukkit.UnsafeValues.deserializeItem_added(byte[])"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.UnsafeValues.getItemAttributes_added(org.bukkit.Material, org.bukkit.inventory.EquipmentSlot)"/>
   <text>
     InsertCommentsHere
   </text>

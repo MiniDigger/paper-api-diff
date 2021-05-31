@@ -89,6 +89,13 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.Server.broadcast_added(net.kyori.adventure.text.Component)"></A>
+  <nobr><code>int</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/Server.html#broadcast(net.kyori.adventure.text.Component)" target="_top"><tt>broadcast</tt></A>(<code>Component</code>)</nobr>
+  </TD>
+  <TD VALIGN="TOP">Broadcast a message to all players.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.Server.broadcast_added(net.kyori.adventure.text.Component, java.lang.String)"></A>
   <nobr><code>int</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/Server.html#broadcast(net.kyori.adventure.text.Component, java.lang.String)" target="_top"><tt>broadcast</tt></A>(<code>Component,</nobr> String<nobr><nobr></code>)</nobr>
   </TD>
@@ -336,7 +343,7 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/
   <TD VALIGN="TOP" WIDTH="30%">
 <b>Now deprecated</b>.<br>
   </TD>
-  <TD VALIGN="TOP">use {@code sendMessage} methods that accept {@link net.kyori.adventure.text.Component}</TD>
+  <TD VALIGN="TOP">use {@link #broadcast(net.kyori.adventure.text.Component)}</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
