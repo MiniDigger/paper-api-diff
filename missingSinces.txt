@@ -196,6 +196,7 @@ MISSING @SINCE TAG: org.bukkit.UnsafeValues Method isValidRepairItemStack(org.bu
 NO DOC BLOCK: org.bukkit.Sound Method key()
 MISSING @SINCE TAG: org.bukkit.WorldCreator Method key()
 NO DOC BLOCK: org.bukkit.UnsafeValues Method legacyComponentSerializer()
+MISSING @SINCE TAG: org.bukkit.World Method lineOfSightExists(org.bukkit.Location, org.bukkit.Location)
 MISSING @SINCE TAG: org.bukkit.World Method locateNearestBiome(org.bukkit.Location, org.bukkit.block.Biome, int)
 MISSING @SINCE TAG: org.bukkit.World Method locateNearestBiome(org.bukkit.Location, org.bukkit.block.Biome, int, int)
 MISSING @SINCE TAG: org.bukkit.Bukkit Method motd()

@@ -1582,6 +1582,12 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.World.lineOfSightExists_added(org.bukkit.Location, org.bukkit.Location)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.World.locateNearestBiome_added(org.bukkit.Location, org.bukkit.block.Biome, int)"/>
   <text>
     InsertCommentsHere
