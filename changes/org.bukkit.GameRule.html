@@ -7,7 +7,7 @@
 <meta name="description" content="JDiff is a Javadoc doclet which generates an HTML report of all the packages, classes, constructors, methods, and fields which have been removed, added or changed in any way, including their documentation, when two APIs are compared.">
 <meta name="keywords" content="diff, jdiff, javadiff, java diff, java difference, API difference, difference between two APIs, API diff, Javadoc, doclet">
 <TITLE>
-org.bukkit.Material
+org.bukkit.GameRule
 </TITLE>
 <LINK REL="stylesheet" TYPE="text/css" HREF="../stylesheet-jdiff.css" TITLE="Style">
 </HEAD>
@@ -18,7 +18,7 @@ org.bukkit.Material
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/Material.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>Paper</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/GameRule.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>Paper</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_org.bukkit.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -31,78 +31,49 @@ org.bukkit.Material
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="org.bukkit.Location.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="org.bukkit.Nameable.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="org.bukkit.Chunk.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="org.bukkit.Location.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
-  &nbsp;<A HREF="org.bukkit.Material.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
+  &nbsp;<A HREF="org.bukkit.GameRule.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell3"><FONT SIZE="-2"> DETAIL: &nbsp;
 CONSTRUCTORS&nbsp;|&nbsp;
-<a href="#methods">METHODS</a>&nbsp;|&nbsp;
-FIELDS
+METHODS&nbsp;|&nbsp;
+<a href="#fields">FIELDS</a>
   </FONT></TD>
 </TR>
 </TABLE>
 <HR>
 <!-- End of nav bar -->
 <H2>
-Class org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/Material.html" target="_top"><tt>Material</tt></A>
+Class org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/GameRule.html" target="_top"><tt>GameRule</tt></A>
 </H2>
 <a NAME="constructors"></a>
 <a NAME="methods"></a>
+<a NAME="fields"></a>
 <p>
 <a NAME="Removed"></a>
-<TABLE summary="Removed Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TABLE summary="Removed Fields" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
 <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
-  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Removed Methods</B></FONT></TD>
+  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Removed Fields</B></FONT></TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="org.bukkit.Material.getSlipperiness_removed()"></A>
-  <nobr><code>float</code>&nbsp;<A HREF="https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html#getSlipperiness()" target="_top"><tt>getSlipperiness</tt></A>()</nobr>
+  <A NAME="org.bukkit.GameRule.FREEZE_DAMAGE"></A>
+  <nobr><code>GameRule&lt;Boolean&gt;</code>&nbsp;<A HREF="https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/GameRule.html#FREEZE_DAMAGE" target="_top"><tt>FREEZE_DAMAGE</tt></A></nobr>
   </TD>
-  <TD VALIGN="TOP">Returns a value that represents how 'slippery' the block is.</TD>
+  <TD VALIGN="TOP">Whether freeze damage is enabled or not.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.GameRule.PLAYERS_SLEEPING_PERCENTAGE"></A>
+  <nobr><code>GameRule&lt;Integer&gt;</code>&nbsp;<A HREF="https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/GameRule.html#PLAYERS_SLEEPING_PERCENTAGE" target="_top"><tt>PLAYERS_SLEEPING_PERCENTAGE</tt></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">The percentage of online players which must be sleeping for the night to
+ advance.</TD>
 </TR>
 </TABLE>
 &nbsp;
-<p>
-<a NAME="Added"></a>
-<TABLE summary="Added Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
-<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
-  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Added Methods</B></FONT></TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="org.bukkit.Material.getItemAttributes_added(org.bukkit.inventory.EquipmentSlot)"></A>
-  <nobr><code>&lt;any&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/Material.html#getItemAttributes(org.bukkit.inventory.EquipmentSlot)" target="_top"><tt>getItemAttributes</tt></A>(<code>EquipmentSlot</code>)</nobr>
-  </TD>
-  <TD VALIGN="TOP">Returns an immutable multimap of attributes for the slot.</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="org.bukkit.Material.getItemRarity_added()"></A>
-  <nobr><code>ItemRarity</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/Material.html#getItemRarity()" target="_top"><tt>getItemRarity</tt></A>()</nobr>
-  </TD>
-  <TD VALIGN="TOP">Returns the item rarity for the item.</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="org.bukkit.Material.getTranslationKey_added()"></A>
-  <nobr><code>String</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/Material.html#getTranslationKey()" target="_top"><tt>getTranslationKey</tt></A>()</nobr>
-  </TD>
-  <TD VALIGN="TOP">Return the translation key for the Material, so the client can translate it into the active
- locale when using a TranslatableComponent.</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="org.bukkit.Material.isEmpty_added()"></A>
-  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/Material.html#isEmpty()" target="_top"><tt>isEmpty</tt></A>()</nobr>
-  </TD>
-  <TD VALIGN="TOP">@return If the type is either AIR, CAVE_AIR or VOID_AIR</TD>
-</TR>
-</TABLE>
-&nbsp;
-<a NAME="fields"></a>
 <HR>
 <!-- Start of nav bar -->
 <TABLE summary="Navigation bar" BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0">
@@ -110,7 +81,7 @@ Class org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/Mate
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/Material.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>Paper</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/GameRule.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>Paper</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_org.bukkit.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -123,11 +94,11 @@ Class org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.16/org/bukkit/Mate
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="org.bukkit.Location.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="org.bukkit.Nameable.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="org.bukkit.Chunk.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="org.bukkit.Location.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
-  &nbsp;<A HREF="org.bukkit.Material.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
+  &nbsp;<A HREF="org.bukkit.GameRule.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
 <TD BGCOLOR="0xFFFFFF" CLASS="NavBarCell3"></TD>
 </TR>
 </TABLE>

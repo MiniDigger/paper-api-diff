@@ -304,6 +304,30 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.GameEvent"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.GameRule"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.GameRule.FREEZE_DAMAGE"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.GameRule.PLAYERS_SLEEPING_PERCENTAGE"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.Location"/>
   <text>
     InsertCommentsHere
@@ -544,6 +568,12 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.Material.getSlipperiness_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.Material.getTranslationKey_added()"/>
   <text>
     InsertCommentsHere
@@ -658,7 +688,25 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.Particle.DustTransition"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.Particle.builder_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Registry"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Registry.GAME_EVENT"/>
   <text>
     InsertCommentsHere
   </text>
@@ -952,7 +1000,133 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.Tag.AXOLOTL_TEMPT_ITEMS"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.BASE_STONE_NETHER"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.BASE_STONE_OVERWORLD"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.Tag.BEEHIVE_INHABITORS"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.CANDLES"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.CANDLE_CAKES"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.CAULDRONS"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.CAVE_VINES"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.CLUSTER_MAX_HARVESTABLES"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.COAL_ORES"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.COPPER_ORES"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.CRYSTAL_SOUND_BLOCKS"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.DEEPSLATE_ORE_REPLACEABLES"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.DIAMOND_ORES"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.DIRT"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.DRIPSTONE_REPLACEABLE"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.EMERALD_ORES"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.FEATURES_CANNOT_REPLACE"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.FOX_FOOD"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.FREEZE_IMMUNE_WEARABLES"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.GEODE_INVALID_BLOCKS"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.IGNORED_BY_PIGLIN_BABIES"/>
   <text>
     InsertCommentsHere
   </text>
@@ -964,7 +1138,109 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.Tag.INSIDE_STEP_SOUND_BLOCKS"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.IRON_ORES"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.LAPIS_ORES"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.LAVA_POOL_STONE_CANNOT_REPLACE"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.LUSH_GROUND_REPLACEABLE"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.MINEABLE_AXE"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.MINEABLE_HOE"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.MINEABLE_PICKAXE"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.MINEABLE_SHOVEL"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.MOSS_REPLACEABLE"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.MUSHROOM_GROW_BLOCK"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.NEEDS_DIAMOND_TOOL"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.NEEDS_IRON_TOOL"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.NEEDS_STONE_TOOL"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.OCCLUDES_VIBRATION_SIGNALS"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.PIGLIN_FOOD"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.Tag.RAIDERS"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.REDSTONE_ORES"/>
   <text>
     InsertCommentsHere
   </text>
@@ -977,6 +1253,24 @@
 </comment>
 <comment>
   <identifier id="org.bukkit.Tag.SKELETONS"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.SMALL_DRIPLEAF_PLACEABLE"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.SNOW"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.STONE_ORE_REPLACEABLES"/>
   <text>
     InsertCommentsHere
   </text>
@@ -1115,6 +1409,30 @@
 </comment>
 <comment>
   <identifier id="org.bukkit.UnsafeValues.serializeItem_added(org.bukkit.inventory.ItemStack)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Vibration"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Vibration.Destination"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Vibration.Destination.BlockDestination"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Vibration.Destination.EntityDestination"/>
   <text>
     InsertCommentsHere
   </text>
