@@ -220,6 +220,12 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.Bukkit.isWhitelistEnforced_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.Bukkit.motd_added()"/>
   <text>
     InsertCommentsHere
@@ -239,6 +245,12 @@
 </comment>
 <comment>
   <identifier id="org.bukkit.Bukkit.setMaxPlayers_added(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Bukkit.setWhitelistEnforced_removed(boolean)"/>
   <text>
     InsertCommentsHere
   </text>
@@ -940,6 +952,12 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.Server.isWhitelistEnforced_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.Server.motd_added()"/>
   <text>
     InsertCommentsHere
@@ -959,6 +977,12 @@
 </comment>
 <comment>
   <identifier id="org.bukkit.Server.setMaxPlayers_added(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Server.setWhitelistEnforced_removed(boolean)"/>
   <text>
     InsertCommentsHere
   </text>
