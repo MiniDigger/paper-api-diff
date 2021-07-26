@@ -76,6 +76,12 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.Bukkit.craftItem_removed(org.bukkit.inventory.ItemStack[], org.bukkit.World, org.bukkit.entity.Player)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.Bukkit.createInventory_added(org.bukkit.inventory.InventoryHolder, int, net.kyori.adventure.text.Component)"/>
   <text>
     InsertCommentsHere
@@ -137,6 +143,12 @@
 </comment>
 <comment>
   <identifier id="org.bukkit.Bukkit.getCommandMap_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Bukkit.getCraftingRecipe_removed(org.bukkit.inventory.ItemStack[], org.bukkit.World)"/>
   <text>
     InsertCommentsHere
   </text>
@@ -808,6 +820,12 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.Server.craftItem_removed(org.bukkit.inventory.ItemStack[], org.bukkit.World, org.bukkit.entity.Player)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.Server.createInventory_added(org.bukkit.inventory.InventoryHolder, int, net.kyori.adventure.text.Component)"/>
   <text>
     InsertCommentsHere
@@ -869,6 +887,12 @@
 </comment>
 <comment>
   <identifier id="org.bukkit.Server.getCommandMap_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Server.getCraftingRecipe_removed(org.bukkit.inventory.ItemStack[], org.bukkit.World)"/>
   <text>
     InsertCommentsHere
   </text>
