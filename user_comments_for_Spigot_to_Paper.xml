@@ -724,6 +724,12 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.RegionAccessor"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.Registry"/>
   <text>
     InsertCommentsHere
@@ -1552,6 +1558,18 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.World.getBiomeProvider_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.getBiome_added(int, int, int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.World.getBlockAtKey_added(long)"/>
   <text>
     InsertCommentsHere
@@ -1714,6 +1732,12 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.World.getEnvironment_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.World.getHighestBlockAt_added(int, int, com.destroystokyo.paper.HeightmapType)"/>
   <text>
     InsertCommentsHere
@@ -1756,7 +1780,31 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.World.getLogicalHeight_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.getMaxHeight_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.getMinHeight_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.World.getMoonPhase_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.getName_added()"/>
   <text>
     InsertCommentsHere
   </text>
@@ -1882,6 +1930,12 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.World.getSeed_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.World.getTickableTileEntityCount_added()"/>
   <text>
     InsertCommentsHere
@@ -1894,19 +1948,37 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.World.getUID_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.World.hasBedrockCeiling_added()"/>
   <text>
     InsertCommentsHere
   </text>
 </comment>
 <comment>
-  <identifier id="org.bukkit.World.hasRaids_added()"/>
+  <identifier id="org.bukkit.World.hasCeiling_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.hasSkyLight_removed()"/>
   <text>
     InsertCommentsHere
   </text>
 </comment>
 <comment>
   <identifier id="org.bukkit.World.hasSkylight_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.isBedWorks_removed()"/>
   <text>
     InsertCommentsHere
   </text>
@@ -1930,13 +2002,13 @@
   </text>
 </comment>
 <comment>
-  <identifier id="org.bukkit.World.isNatural_added()"/>
+  <identifier id="org.bukkit.World.isRespawnAnchorWorks_removed()"/>
   <text>
     InsertCommentsHere
   </text>
 </comment>
 <comment>
-  <identifier id="org.bukkit.World.isPiglinSafe_added()"/>
+  <identifier id="org.bukkit.World.isUltraWarm_removed()"/>
   <text>
     InsertCommentsHere
   </text>
@@ -1966,6 +2038,12 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.World.setBiome_added(int, int, int, org.bukkit.block.Biome)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.World.setNoTickViewDistance_added(int)"/>
   <text>
     InsertCommentsHere
@@ -1973,6 +2051,12 @@
 </comment>
 <comment>
   <identifier id="org.bukkit.World.setViewDistance_added(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.spawnEntity_added(org.bukkit.Location, org.bukkit.entity.EntityType)"/>
   <text>
     InsertCommentsHere
   </text>
@@ -2008,6 +2092,12 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.World.spawn_added(org.bukkit.Location, java.lang.Class&lt;T&gt;)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.World.spawn_added(org.bukkit.Location, java.lang.Class&lt;T&gt;, org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason)"/>
   <text>
     InsertCommentsHere
@@ -2032,12 +2122,6 @@
   </text>
 </comment>
 <comment>
-  <identifier id="org.bukkit.World.spawn_removed(org.bukkit.Location, java.lang.Class&lt;T&gt;, org.bukkit.util.Consumer&lt;T&gt;)"/>
-  <text>
-    InsertCommentsHere
-  </text>
-</comment>
-<comment>
   <identifier id="org.bukkit.WorldBorder"/>
   <text>
     InsertCommentsHere
@@ -2056,6 +2140,30 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.WorldCreator.biomeProvider_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.WorldCreator.biomeProvider_removed(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.WorldCreator.biomeProvider_removed(java.lang.String, org.bukkit.command.CommandSender)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.WorldCreator.biomeProvider_removed(org.bukkit.generator.BiomeProvider)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.WorldCreator.ctor_added(java.lang.String, org.bukkit.NamespacedKey)"/>
   <text>
     InsertCommentsHere
@@ -2063,6 +2171,12 @@
 </comment>
 <comment>
   <identifier id="org.bukkit.WorldCreator.ctor_added(org.bukkit.NamespacedKey)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.WorldCreator.getBiomeProviderForName_removed(java.lang.String, java.lang.String, org.bukkit.command.CommandSender)"/>
   <text>
     InsertCommentsHere
   </text>

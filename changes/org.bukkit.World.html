@@ -48,7 +48,7 @@ FIELDS
 <H2>
 Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html" target="_top"><tt>World</tt></A>
 </H2>
-<p><font size="+1">Added interface <code>org.bukkit.Keyed</code>.<br></font>
+<p><font size="+1">Removed interfaces <code>org.bukkit.RegionAccessor, org.bukkit.generator.WorldInfo</code>.<br> Added interface <code>org.bukkit.Keyed</code>.<br></font>
 <a NAME="constructors"></a>
 <a NAME="methods"></a>
 <p>
@@ -59,11 +59,63 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="org.bukkit.World.spawn_removed(org.bukkit.Location, java.lang.Class<T>, org.bukkit.util.Consumer<T>)"></A>
-  <nobr><code>Entity</code>&nbsp;<A HREF="https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/World.html#spawn(org.bukkit.Location, java.lang.Class<T>, org.bukkit.util.Consumer<T>)" target="_top"><tt>spawn</tt></A>(<code>Location,</nobr> Class&lt;T&gt;<nobr>,</nobr> Consumer&lt;T&gt;<nobr><nobr></code>)</nobr>
+  <A NAME="org.bukkit.World.getBiomeProvider_removed()"></A>
+  <nobr><code>BiomeProvider</code>&nbsp;<A HREF="https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/World.html#getBiomeProvider()" target="_top"><tt>getBiomeProvider</tt></A>()</nobr>
   </TD>
-  <TD VALIGN="TOP">Spawn an entity of a specific class at the given <A HREF="https://papermc.io/javadocs/paper/1.17/Location.html"><TT>Location</TT></A>, with
- the supplied function run before the entity is added to the world.</TD>
+  <TD VALIGN="TOP">Gets the biome provider for this world
+
+ </TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.getLogicalHeight_removed()"></A>
+  <nobr><code>int</code>&nbsp;<A HREF="https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/World.html#getLogicalHeight()" target="_top"><tt>getLogicalHeight</tt></A>()</nobr>
+  </TD>
+  <TD VALIGN="TOP">Gets the maximum height to which chorus fruits and nether portals can
+ bring players within this dimension.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.hasCeiling_removed()"></A>
+  <nobr><code>boolean</code>&nbsp;<A HREF="https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/World.html#hasCeiling()" target="_top"><tt>hasCeiling</tt></A>()</nobr>
+  </TD>
+  <TD VALIGN="TOP">Gets if this world has a ceiling.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.hasSkyLight_removed()"></A>
+  <nobr><code>boolean</code>&nbsp;<A HREF="https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/World.html#hasSkyLight()" target="_top"><tt>hasSkyLight</tt></A>()</nobr>
+  </TD>
+  <TD VALIGN="TOP">Gets if this world has skylight access.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.isBedWorks_removed()"></A>
+  <nobr><code>boolean</code>&nbsp;<A HREF="https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/World.html#isBedWorks()" target="_top"><tt>isBedWorks</tt></A>()</nobr>
+  </TD>
+  <TD VALIGN="TOP">Gets if beds work in this world.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.isRespawnAnchorWorks_removed()"></A>
+  <nobr><code>boolean</code>&nbsp;<A HREF="https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/World.html#isRespawnAnchorWorks()" target="_top"><tt>isRespawnAnchorWorks</tt></A>()</nobr>
+  </TD>
+  <TD VALIGN="TOP">Gets if this world allows players to charge and use respawn anchors.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.isUltraWarm_removed()"></A>
+  <nobr><code>boolean</code>&nbsp;<A HREF="https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/World.html#isUltraWarm()" target="_top"><tt>isUltraWarm</tt></A>()</nobr>
+  </TD>
+  <TD VALIGN="TOP">Gets if various water/lava mechanics will be triggered in this world, eg:
+ <br>
+ <ul>
+ <li>Water is evaporated</li>
+ <li>Sponges dry</li>
+ <li>Lava spreads faster and further</li>
+ </ul>
+
+ </TD>
 </TR>
 </TABLE>
 &nbsp;
@@ -144,6 +196,13 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
   <TD VALIGN="TOP">Checks if respawn anchors work
 
  </TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.getBiome_added(int, int, int)"></A>
+  <nobr><code>Biome</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getBiome(int, int, int)" target="_top"><tt>getBiome</tt></A>(<code>int,</nobr> int<nobr>,</nobr> int<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD VALIGN="TOP">Gets the biome for the given block coordinates.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
@@ -400,6 +459,15 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.getEnvironment_added()"></A>
+  <nobr><code>Environment</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getEnvironment()" target="_top"><tt>getEnvironment</tt></A>()</nobr>
+  </TD>
+  <TD VALIGN="TOP">Gets the <A HREF="https://papermc.io/javadocs/paper/1.17/Environment.html"><TT>Environment</TT></A> type of this world
+
+ </TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getHighestBlockAt_added(int, int, com.destroystokyo.paper.HeightmapType)"></A>
   <nobr><code>Block</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getHighestBlockAt(int, int, com.destroystokyo.paper.HeightmapType)" target="_top"><tt>getHighestBlockAt</tt></A>(<code>int,</nobr> int<nobr>,</nobr> HeightmapType<nobr><nobr></code>)</nobr>
   </TD>
@@ -453,10 +521,33 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.getMaxHeight_added()"></A>
+  <nobr><code>int</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getMaxHeight()" target="_top"><tt>getMaxHeight</tt></A>()</nobr>
+  </TD>
+  <TD VALIGN="TOP">Gets the maximum height of this world.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.getMinHeight_added()"></A>
+  <nobr><code>int</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getMinHeight()" target="_top"><tt>getMinHeight</tt></A>()</nobr>
+  </TD>
+  <TD VALIGN="TOP">Gets the minimum height of this world.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getMoonPhase_added()"></A>
   <nobr><code>MoonPhase</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getMoonPhase()" target="_top"><tt>getMoonPhase</tt></A>()</nobr>
   </TD>
   <TD VALIGN="TOP">@return the current moon phase at the current time in the world</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.getName_added()"></A>
+  <nobr><code>String</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getName()" target="_top"><tt>getName</tt></A>()</nobr>
+  </TD>
+  <TD VALIGN="TOP">Gets the unique name of this world
+
+ </TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
@@ -618,6 +709,13 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.getSeed_added()"></A>
+  <nobr><code>long</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getSeed()" target="_top"><tt>getSeed</tt></A>()</nobr>
+  </TD>
+  <TD VALIGN="TOP">Gets the Seed for this world.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getTickableTileEntityCount_added()"></A>
   <nobr><code>int</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getTickableTileEntityCount()" target="_top"><tt>getTickableTileEntityCount</tt></A>()</nobr>
   </TD>
@@ -632,19 +730,19 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="org.bukkit.World.hasBedrockCeiling_added()"></A>
-  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#hasBedrockCeiling()" target="_top"><tt>hasBedrockCeiling</tt></A>()</nobr>
+  <A NAME="org.bukkit.World.getUID_added()"></A>
+  <nobr><code>UUID</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getUID()" target="_top"><tt>getUID</tt></A>()</nobr>
   </TD>
-  <TD VALIGN="TOP">Checks if the world has a bedrock ceiling
+  <TD VALIGN="TOP">Gets the Unique ID of this world
 
  </TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="org.bukkit.World.hasRaids_added()"></A>
-  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#hasRaids()" target="_top"><tt>hasRaids</tt></A>()</nobr>
+  <A NAME="org.bukkit.World.hasBedrockCeiling_added()"></A>
+  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#hasBedrockCeiling()" target="_top"><tt>hasBedrockCeiling</tt></A>()</nobr>
   </TD>
-  <TD VALIGN="TOP">Checks if this world supports raids
+  <TD VALIGN="TOP">Checks if the world has a bedrock ceiling
 
  </TD>
 </TR>
@@ -685,22 +783,6 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="org.bukkit.World.isNatural_added()"></A>
-  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#isNatural()" target="_top"><tt>isNatural</tt></A>()</nobr>
-  </TD>
-  <TD VALIGN="TOP">Checks if the world is natural.</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="org.bukkit.World.isPiglinSafe_added()"></A>
-  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#isPiglinSafe()" target="_top"><tt>isPiglinSafe</tt></A>()</nobr>
-  </TD>
-  <TD VALIGN="TOP">Checks if piglins will turn into Zombified Piglins in this world
-
- </TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.isUltrawarm_added()"></A>
   <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#isUltrawarm()" target="_top"><tt>isUltrawarm</tt></A>()</nobr>
   </TD>
@@ -735,6 +817,15 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
   </TD>
   <TD VALIGN="TOP">Locates the nearest biome based on an origin, biome type, and radius to search
  and step
+
+ </TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.setBiome_added(int, int, int, org.bukkit.block.Biome)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#setBiome(int, int, int, org.bukkit.block.Biome)" target="_top"><tt>setBiome</tt></A>(<code>int,</nobr> int<nobr>,</nobr> int<nobr>,</nobr> Biome<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD VALIGN="TOP">Sets the biome for the given block coordinates
 
  </TD>
 </TR>
@@ -780,6 +871,24 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
   </TD>
   <TD VALIGN="TOP">Spawn an entity of a specific class at the given <A HREF="https://papermc.io/javadocs/paper/1.17/Location.html"><TT>Location</TT></A>, with
  the supplied function run before the entity is added to the world.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.spawn_added(org.bukkit.Location, java.lang.Class<T>)"></A>
+  <nobr><code>Entity</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#spawn(org.bukkit.Location, java.lang.Class<T>)" target="_top"><tt>spawn</tt></A>(<code>Location,</nobr> Class&lt;T&gt;<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD VALIGN="TOP">Spawn an entity of a specific class at the given <A HREF="https://papermc.io/javadocs/paper/1.17/Location.html"><TT>Location</TT></A>
+
+ </TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.spawnEntity_added(org.bukkit.Location, org.bukkit.entity.EntityType)"></A>
+  <nobr><code>Entity</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#spawnEntity(org.bukkit.Location, org.bukkit.entity.EntityType)" target="_top"><tt>spawnEntity</tt></A>(<code>Location,</nobr> EntityType<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD VALIGN="TOP">Creates a entity at the given <A HREF="https://papermc.io/javadocs/paper/1.17/Location.html"><TT>Location</TT></A>
+
+ </TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">

@@ -108,6 +108,19 @@ Method Differences Index
 &nbsp;&nbsp;<nobr><A HREF="org.bukkit.OfflinePlayer.html#org.bukkit.OfflinePlayer.banPlayer_added(java.lang.String, java.util.Date, java.lang.String, boolean)" class="hiddenlink" target="rightframe">type&nbsp;<b>
 (<code>String, Date, String, boolean</code>)</b>&nbsp;in&nbsp;org.bukkit.OfflinePlayer
 </A></nobr><br>
+<i>biomeProvider</i><br>
+&nbsp;&nbsp;<nobr><A HREF="org.bukkit.WorldCreator.html#org.bukkit.WorldCreator.biomeProvider_removed(java.lang.String)" class="hiddenlink" target="rightframe">type&nbsp;<strike>
+(<code>String</code>)</strike>&nbsp;in&nbsp;org.bukkit.WorldCreator
+</A></nobr><br>
+&nbsp;&nbsp;<nobr><A HREF="org.bukkit.WorldCreator.html#org.bukkit.WorldCreator.biomeProvider_removed(java.lang.String, org.bukkit.command.CommandSender)" class="hiddenlink" target="rightframe">type&nbsp;<strike>
+(<code>String, CommandSender</code>)</strike>&nbsp;in&nbsp;org.bukkit.WorldCreator
+</A></nobr><br>
+&nbsp;&nbsp;<nobr><A HREF="org.bukkit.WorldCreator.html#org.bukkit.WorldCreator.biomeProvider_removed(org.bukkit.generator.BiomeProvider)" class="hiddenlink" target="rightframe">type&nbsp;<strike>
+(<code>BiomeProvider</code>)</strike>&nbsp;in&nbsp;org.bukkit.WorldCreator
+</A></nobr><br>
+&nbsp;&nbsp;<nobr><A HREF="org.bukkit.WorldCreator.html#org.bukkit.WorldCreator.biomeProvider_removed()" class="hiddenlink" target="rightframe">type&nbsp;<strike>
+()</strike>&nbsp;in&nbsp;org.bukkit.WorldCreator
+</A></nobr><br>
 <i>broadcast</i><br>
 &nbsp;&nbsp;<nobr><A HREF="org.bukkit.Bukkit.html#org.bukkit.Bukkit.broadcast_removed(java.lang.String, java.lang.String)" class="hiddenlink" target="rightframe">type&nbsp;<strike>
 (<code>String, String</code>)</strike>&nbsp;in&nbsp;org.bukkit.Bukkit
@@ -343,6 +356,12 @@ Method Differences Index
 &nbsp;&nbsp;<nobr><A HREF="org.bukkit.Server.html#org.bukkit.Server.getAverageTickTime_added()" class="hiddenlink" target="rightframe">type&nbsp;<b>
 ()</b>&nbsp;in&nbsp;org.bukkit.Server
 </A></nobr><br>
+<nobr><A HREF="org.bukkit.World.html#org.bukkit.World.getBiome_added(int, int, int)" class="hiddenlink" target="rightframe"><b>getBiome</b>
+(<code>int, int, int</code>)</A></nobr><br>
+<nobr><A HREF="org.bukkit.World.html#org.bukkit.World.getBiomeProvider_removed()" class="hiddenlink" target="rightframe"><strike>getBiomeProvider</strike>
+()</A></nobr><br>
+<nobr><A HREF="org.bukkit.WorldCreator.html#org.bukkit.WorldCreator.getBiomeProviderForName_removed(java.lang.String, java.lang.String, org.bukkit.command.CommandSender)" class="hiddenlink" target="rightframe"><strike>getBiomeProviderForName</strike>
+(<code>String, String, CommandSender</code>)</A></nobr><br>
 <nobr><A HREF="org.bukkit.World.html#org.bukkit.World.getBlockAtKey_added(long)" class="hiddenlink" target="rightframe"><b>getBlockAtKey</b>
 (<code>long</code>)</A></nobr><br>
 <nobr><A HREF="org.bukkit.Server.Spigot.html#org.bukkit.Server.Spigot.getBukkitConfig_added()" class="hiddenlink" target="rightframe"><b>getBukkitConfig</b>
@@ -460,6 +479,8 @@ Method Differences Index
 (<code>UUID</code>)</A></nobr><br>
 <nobr><A HREF="org.bukkit.World.html#org.bukkit.World.getEntityCount_added()" class="hiddenlink" target="rightframe"><b>getEntityCount</b>
 ()</A></nobr><br>
+<nobr><A HREF="org.bukkit.World.html#org.bukkit.World.getEnvironment_added()" class="hiddenlink" target="rightframe"><b>getEnvironment</b>
+()</A></nobr><br>
 <i>getHighestBlockAt</i><br>
 &nbsp;&nbsp;<nobr><A HREF="org.bukkit.World.html#org.bukkit.World.getHighestBlockAt_added(int, int, com.destroystokyo.paper.HeightmapType)" class="hiddenlink" target="rightframe">type&nbsp;<b>
 (<code>int, int, HeightmapType</code>)</b>&nbsp;in&nbsp;org.bukkit.World
@@ -502,6 +523,10 @@ Method Differences Index
 ()</A></nobr><br>
 <nobr><A HREF="org.bukkit.World.html#org.bukkit.World.getLocationAtKey_added(long)" class="hiddenlink" target="rightframe"><b>getLocationAtKey</b>
 (<code>long</code>)</A></nobr><br>
+<nobr><A HREF="org.bukkit.World.html#org.bukkit.World.getLogicalHeight_removed()" class="hiddenlink" target="rightframe"><strike>getLogicalHeight</strike>
+()</A></nobr><br>
+<nobr><A HREF="org.bukkit.World.html#org.bukkit.World.getMaxHeight_added()" class="hiddenlink" target="rightframe"><b>getMaxHeight</b>
+()</A></nobr><br>
 <i>getMinecraftVersion</i><br>
 &nbsp;&nbsp;<nobr><A HREF="org.bukkit.Bukkit.html#org.bukkit.Bukkit.getMinecraftVersion_added()" class="hiddenlink" target="rightframe">type&nbsp;<b>
 ()</b>&nbsp;in&nbsp;org.bukkit.Bukkit
@@ -509,6 +534,8 @@ Method Differences Index
 &nbsp;&nbsp;<nobr><A HREF="org.bukkit.Server.html#org.bukkit.Server.getMinecraftVersion_added()" class="hiddenlink" target="rightframe">type&nbsp;<b>
 ()</b>&nbsp;in&nbsp;org.bukkit.Server
 </A></nobr><br>
+<nobr><A HREF="org.bukkit.World.html#org.bukkit.World.getMinHeight_added()" class="hiddenlink" target="rightframe"><b>getMinHeight</b>
+()</A></nobr><br>
 <i>getMobGoals</i><br>
 &nbsp;&nbsp;<nobr><A HREF="org.bukkit.Bukkit.html#org.bukkit.Bukkit.getMobGoals_added()" class="hiddenlink" target="rightframe">type&nbsp;<b>
 ()</b>&nbsp;in&nbsp;org.bukkit.Bukkit
@@ -525,6 +552,8 @@ Method Differences Index
 &nbsp;&nbsp;<nobr><A HREF="org.bukkit.Server.html#org.bukkit.Server.getMotd_changed()" class="hiddenlink" target="rightframe">type&nbsp;
 ()&nbsp;in&nbsp;org.bukkit.Server
 </A></nobr><br>
+<nobr><A HREF="org.bukkit.World.html#org.bukkit.World.getName_added()" class="hiddenlink" target="rightframe"><b>getName</b>
+()</A></nobr><br>
 <nobr><A HREF="org.bukkit.Location.html#org.bukkit.Location.getNearbyEntities_added(double, double, double)" class="hiddenlink" target="rightframe"><b>getNearbyEntities</b>
 (<code>double, double, double</code>)</A></nobr><br>
 <i>getNearbyEntitiesByType</i><br>
@@ -667,6 +696,8 @@ Method Differences Index
 </A></nobr><br>
 <nobr><A HREF="org.bukkit.UnsafeValues.html#org.bukkit.UnsafeValues.getProtocolVersion_added()" class="hiddenlink" target="rightframe"><b>getProtocolVersion</b>
 ()</A></nobr><br>
+<nobr><A HREF="org.bukkit.World.html#org.bukkit.World.getSeed_added()" class="hiddenlink" target="rightframe"><b>getSeed</b>
+()</A></nobr><br>
 <i>getShutdownMessage</i><br>
 &nbsp;&nbsp;<nobr><A HREF="org.bukkit.Bukkit.html#org.bukkit.Bukkit.getShutdownMessage_changed()" class="hiddenlink" target="rightframe">type&nbsp;
 ()&nbsp;in&nbsp;org.bukkit.Bukkit
@@ -727,6 +758,8 @@ Method Differences Index
 &nbsp;&nbsp;<nobr><A HREF="org.bukkit.UnsafeValues.html#org.bukkit.UnsafeValues.getTranslationKey_added(org.bukkit.inventory.ItemStack)" class="hiddenlink" target="rightframe">type&nbsp;<b>
 (<code>ItemStack</code>)</b>&nbsp;in&nbsp;org.bukkit.UnsafeValues
 </A></nobr><br>
+<nobr><A HREF="org.bukkit.World.html#org.bukkit.World.getUID_added()" class="hiddenlink" target="rightframe"><b>getUID</b>
+()</A></nobr><br>
 <nobr><A HREF="org.bukkit.UnsafeValues.html#org.bukkit.UnsafeValues.getVersionFetcher_added()" class="hiddenlink" target="rightframe"><b>getVersionFetcher</b>
 ()</A></nobr><br>
 <i>getWorld</i><br>
@@ -760,7 +793,9 @@ Method Differences Index
 <br>
 <nobr><A HREF="org.bukkit.World.html#org.bukkit.World.hasBedrockCeiling_added()" class="hiddenlink" target="rightframe"><b>hasBedrockCeiling</b>
 ()</A></nobr><br>
-<nobr><A HREF="org.bukkit.World.html#org.bukkit.World.hasRaids_added()" class="hiddenlink" target="rightframe"><b>hasRaids</b>
+<nobr><A HREF="org.bukkit.World.html#org.bukkit.World.hasCeiling_removed()" class="hiddenlink" target="rightframe"><strike>hasCeiling</strike>
+()</A></nobr><br>
+<nobr><A HREF="org.bukkit.World.html#org.bukkit.World.hasSkyLight_removed()" class="hiddenlink" target="rightframe"><strike>hasSkyLight</strike>
 ()</A></nobr><br>
 <nobr><A HREF="org.bukkit.World.html#org.bukkit.World.hasSkylight_added()" class="hiddenlink" target="rightframe"><b>hasSkylight</b>
 ()</A></nobr><br>
@@ -784,6 +819,8 @@ Method Differences Index
 <a href="#V"><font size="-2">V</font></a> 
  <a href="#topheader"><font size="-2">TOP</font></a>
 <br>
+<nobr><A HREF="org.bukkit.World.html#org.bukkit.World.isBedWorks_removed()" class="hiddenlink" target="rightframe"><strike>isBedWorks</strike>
+()</A></nobr><br>
 <nobr><A HREF="org.bukkit.World.html#org.bukkit.World.isChunkGenerated_added(long)" class="hiddenlink" target="rightframe"><b>isChunkGenerated</b>
 (<code>long</code>)</A></nobr><br>
 <nobr><A HREF="org.bukkit.Location.html#org.bukkit.Location.isChunkLoaded_added()" class="hiddenlink" target="rightframe"><b>isChunkLoaded</b>
@@ -800,9 +837,7 @@ Method Differences Index
 (<code>Location</code>)</A></nobr><br>
 <nobr><A HREF="org.bukkit.UnsafeValues.html#org.bukkit.UnsafeValues.isLegacyPlugin_added(org.bukkit.plugin.Plugin)" class="hiddenlink" target="rightframe"><b>isLegacyPlugin</b>
 (<code>Plugin</code>)</A></nobr><br>
-<nobr><A HREF="org.bukkit.World.html#org.bukkit.World.isNatural_added()" class="hiddenlink" target="rightframe"><b>isNatural</b>
-()</A></nobr><br>
-<nobr><A HREF="org.bukkit.World.html#org.bukkit.World.isPiglinSafe_added()" class="hiddenlink" target="rightframe"><b>isPiglinSafe</b>
+<nobr><A HREF="org.bukkit.World.html#org.bukkit.World.isRespawnAnchorWorks_removed()" class="hiddenlink" target="rightframe"><strike>isRespawnAnchorWorks</strike>
 ()</A></nobr><br>
 <i>isStopping</i><br>
 &nbsp;&nbsp;<nobr><A HREF="org.bukkit.Bukkit.html#org.bukkit.Bukkit.isStopping_added()" class="hiddenlink" target="rightframe">type&nbsp;<b>
@@ -813,6 +848,8 @@ Method Differences Index
 </A></nobr><br>
 <nobr><A HREF="org.bukkit.UnsafeValues.html#org.bukkit.UnsafeValues.isSupportedApiVersion_added(java.lang.String)" class="hiddenlink" target="rightframe"><b>isSupportedApiVersion</b>
 (<code>String</code>)</A></nobr><br>
+<nobr><A HREF="org.bukkit.World.html#org.bukkit.World.isUltraWarm_removed()" class="hiddenlink" target="rightframe"><strike>isUltraWarm</strike>
+()</A></nobr><br>
 <nobr><A HREF="org.bukkit.World.html#org.bukkit.World.isUltrawarm_added()" class="hiddenlink" target="rightframe"><b>isUltrawarm</b>
 ()</A></nobr><br>
 <nobr><A HREF="org.bukkit.UnsafeValues.html#org.bukkit.UnsafeValues.isValidRepairItemStack_added(org.bukkit.inventory.ItemStack, org.bukkit.inventory.ItemStack)" class="hiddenlink" target="rightframe"><b>isValidRepairItemStack</b>
@@ -1045,6 +1082,8 @@ Method Differences Index
 (<code>ItemStack</code>)</A></nobr><br>
 <nobr><A HREF="org.bukkit.Location.html#org.bukkit.Location.set_added(double, double, double)" class="hiddenlink" target="rightframe"><b>set</b>
 (<code>double, double, double</code>)</A></nobr><br>
+<nobr><A HREF="org.bukkit.World.html#org.bukkit.World.setBiome_added(int, int, int, org.bukkit.block.Biome)" class="hiddenlink" target="rightframe"><b>setBiome</b>
+(<code>int, int, int, Biome</code>)</A></nobr><br>
 <i>setMaxPlayers</i><br>
 &nbsp;&nbsp;<nobr><A HREF="org.bukkit.Bukkit.html#org.bukkit.Bukkit.setMaxPlayers_added(int)" class="hiddenlink" target="rightframe">type&nbsp;<b>
 (<code>int</code>)</b>&nbsp;in&nbsp;org.bukkit.Bukkit
@@ -1071,9 +1110,6 @@ Method Differences Index
 ()</b>&nbsp;in&nbsp;org.bukkit.Server
 </A></nobr><br>
 <i>spawn</i><br>
-&nbsp;&nbsp;<nobr><A HREF="org.bukkit.World.html#org.bukkit.World.spawn_removed(org.bukkit.Location, java.lang.Class<T>, org.bukkit.util.Consumer<T>)" class="hiddenlink" target="rightframe">type&nbsp;<strike>
-(<code>Location, Class&lt;T&gt;, Consumer&lt;T&gt;</code>)</strike>&nbsp;in&nbsp;org.bukkit.World
-</A></nobr><br>
 &nbsp;&nbsp;<nobr><A HREF="org.bukkit.World.html#org.bukkit.World.spawn_added(org.bukkit.Location, java.lang.Class<T>, org.bukkit.util.Consumer<T>, org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason)" class="hiddenlink" target="rightframe">type&nbsp;<b>
 (<code>Location, Class&lt;T&gt;, Consumer&lt;T&gt;, SpawnReason</code>)</b>&nbsp;in&nbsp;org.bukkit.World
 </A></nobr><br>
@@ -1086,7 +1122,13 @@ Method Differences Index
 &nbsp;&nbsp;<nobr><A HREF="org.bukkit.World.html#org.bukkit.World.spawn_added(org.bukkit.Location, java.lang.Class<T>, org.bukkit.util.Consumer<T>)" class="hiddenlink" target="rightframe">type&nbsp;<b>
 (<code>Location, Class&lt;T&gt;, Consumer&lt;T&gt;</code>)</b>&nbsp;in&nbsp;org.bukkit.World
 </A></nobr><br>
+&nbsp;&nbsp;<nobr><A HREF="org.bukkit.World.html#org.bukkit.World.spawn_added(org.bukkit.Location, java.lang.Class<T>)" class="hiddenlink" target="rightframe">type&nbsp;<b>
+(<code>Location, Class&lt;T&gt;</code>)</b>&nbsp;in&nbsp;org.bukkit.World
+</A></nobr><br>
 <i>spawnEntity</i><br>
+&nbsp;&nbsp;<nobr><A HREF="org.bukkit.World.html#org.bukkit.World.spawnEntity_added(org.bukkit.Location, org.bukkit.entity.EntityType)" class="hiddenlink" target="rightframe">type&nbsp;<b>
+(<code>Location, EntityType</code>)</b>&nbsp;in&nbsp;org.bukkit.World
+</A></nobr><br>
 &nbsp;&nbsp;<nobr><A HREF="org.bukkit.World.html#org.bukkit.World.spawnEntity_added(org.bukkit.Location, org.bukkit.entity.EntityType, org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason)" class="hiddenlink" target="rightframe">type&nbsp;<b>
 (<code>Location, EntityType, SpawnReason</code>)</b>&nbsp;in&nbsp;org.bukkit.World
 </A></nobr><br>
