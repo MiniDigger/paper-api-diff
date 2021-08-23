@@ -1558,6 +1558,12 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.World.generateTree_changed(org.bukkit.Location, org.bukkit.TreeType, org.bukkit.BlockChangeDelegate)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.World.getBiomeProvider_removed()"/>
   <text>
     InsertCommentsHere
