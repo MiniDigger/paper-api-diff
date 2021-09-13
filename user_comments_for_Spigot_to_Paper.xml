@@ -328,6 +328,12 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.Chunk.isEntitiesLoaded_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.GameEvent"/>
   <text>
     InsertCommentsHere
