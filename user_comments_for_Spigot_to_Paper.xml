@@ -1162,6 +1162,66 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.Tag.ENTITY_TYPES_ARROWS"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.ENTITY_TYPES_AXOLOTL_ALWAYS_HOSTILES"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.ENTITY_TYPES_AXOLOTL_HUNT_TARGETS"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.ENTITY_TYPES_BEEHIVE_INHABITORS"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.ENTITY_TYPES_FREEZE_HURTS_EXTRA_TYPES"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.ENTITY_TYPES_FREEZE_IMMUNE_ENTITY_TYPES"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.ENTITY_TYPES_IMPACT_PROJECTILES"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.ENTITY_TYPES_POWDER_SNOW_WALKABLE_MOBS"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.ENTITY_TYPES_RAIDERS"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.ENTITY_TYPES_SKELETONS"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.Tag.FEATURES_CANNOT_REPLACE"/>
   <text>
     InsertCommentsHere
@@ -1307,6 +1367,12 @@
 </comment>
 <comment>
   <identifier id="org.bukkit.Tag.REGISTRY_ENTITIES"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.REGISTRY_ENTITY_TYPES"/>
   <text>
     InsertCommentsHere
   </text>
