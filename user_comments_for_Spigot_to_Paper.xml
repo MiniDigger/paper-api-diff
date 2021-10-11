@@ -208,6 +208,12 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.Bukkit.getStructureManager_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.Bukkit.getTPS_added()"/>
   <text>
     InsertCommentsHere
@@ -215,6 +221,18 @@
 </comment>
 <comment>
   <identifier id="org.bukkit.Bukkit.getTickTimes_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Bukkit.getTicksPerWaterUndergroundCreatureSpawns_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Bukkit.getWaterUndergroundCreatureSpawnLimit_removed()"/>
   <text>
     InsertCommentsHere
   </text>
@@ -964,6 +982,12 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.Server.getStructureManager_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.Server.getTPS_added()"/>
   <text>
     InsertCommentsHere
@@ -971,6 +995,18 @@
 </comment>
 <comment>
   <identifier id="org.bukkit.Server.getTickTimes_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Server.getTicksPerWaterUndergroundCreatureSpawns_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Server.getWaterUndergroundCreatureSpawnLimit_removed()"/>
   <text>
     InsertCommentsHere
   </text>
@@ -2020,6 +2056,12 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.World.getTicksPerWaterUndergroundCreatureSpawns_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.World.getTileEntityCount_added()"/>
   <text>
     InsertCommentsHere
@@ -2027,6 +2069,12 @@
 </comment>
 <comment>
   <identifier id="org.bukkit.World.getUID_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.getWaterUndergroundCreatureSpawnLimit_removed()"/>
   <text>
     InsertCommentsHere
   </text>
@@ -2128,7 +2176,19 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.World.setTicksPerWaterUndergroundCreatureSpawns_removed(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.World.setViewDistance_added(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.setWaterUndergroundCreatureSpawnLimit_removed(int)"/>
   <text>
     InsertCommentsHere
   </text>
