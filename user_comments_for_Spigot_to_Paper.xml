@@ -166,6 +166,12 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.Bukkit.getHideOnlinePlayers_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.Bukkit.getMinecraftVersion_added()"/>
   <text>
     InsertCommentsHere
@@ -203,6 +209,12 @@
 </comment>
 <comment>
   <identifier id="org.bukkit.Bukkit.getShutdownMessage_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Bukkit.getSimulationDistance_removed()"/>
   <text>
     InsertCommentsHere
   </text>
@@ -940,6 +952,12 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.Server.getHideOnlinePlayers_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.Server.getMinecraftVersion_added()"/>
   <text>
     InsertCommentsHere
@@ -977,6 +995,12 @@
 </comment>
 <comment>
   <identifier id="org.bukkit.Server.getShutdownMessage_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Server.getSimulationDistance_removed()"/>
   <text>
     InsertCommentsHere
   </text>
@@ -1090,13 +1114,37 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.Tag.ANIMALS_SPAWNABLE_ON"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.Tag.ARROWS"/>
   <text>
     InsertCommentsHere
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.Tag.AXOLOTLS_SPAWNABLE_ON"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.Tag.AXOLOTL_TEMPT_ITEMS"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.AZALEA_GROWS_ON"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.AZALEA_ROOT_REPLACEABLE"/>
   <text>
     InsertCommentsHere
   </text>
@@ -1115,6 +1163,12 @@
 </comment>
 <comment>
   <identifier id="org.bukkit.Tag.BEEHIVE_INHABITORS"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.BIG_DRIPLEAF_PLACEABLE"/>
   <text>
     InsertCommentsHere
   </text>
@@ -1264,6 +1318,12 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.Tag.FOXES_SPAWNABLE_ON"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.Tag.FOX_FOOD"/>
   <text>
     InsertCommentsHere
@@ -1277,6 +1337,12 @@
 </comment>
 <comment>
   <identifier id="org.bukkit.Tag.GEODE_INVALID_BLOCKS"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.GOATS_SPAWNABLE_ON"/>
   <text>
     InsertCommentsHere
   </text>
@@ -1348,6 +1414,12 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.Tag.MOOSHROOMS_SPAWNABLE_ON"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.Tag.MOSS_REPLACEABLE"/>
   <text>
     InsertCommentsHere
@@ -1384,7 +1456,25 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.Tag.PARROTS_SPAWNABLE_ON"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.Tag.PIGLIN_FOOD"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.POLAR_BEARS_SPAWNABLE_ON_IN_FROZEN_OCEAN"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.RABBITS_SPAWNABLE_ON"/>
   <text>
     InsertCommentsHere
   </text>
@@ -1414,6 +1504,12 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.Tag.REPLACEABLE_PLANTS"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.Tag.SKELETONS"/>
   <text>
     InsertCommentsHere
@@ -1433,6 +1529,18 @@
 </comment>
 <comment>
   <identifier id="org.bukkit.Tag.STONE_ORE_REPLACEABLES"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.TERRACOTTA"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Tag.WOLVES_SPAWNABLE_ON"/>
   <text>
     InsertCommentsHere
   </text>
@@ -2045,6 +2153,12 @@
 </comment>
 <comment>
   <identifier id="org.bukkit.World.getSeed_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.getSimulationDistance_removed()"/>
   <text>
     InsertCommentsHere
   </text>
