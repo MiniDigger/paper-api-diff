@@ -53,7 +53,7 @@ mkdir "${workdir}"
 cd "${workdir}"
 
 # download requirements, need to ignore cert here as its invalid...
-curl -L -o -k jdiff.zip https://pilotfiber.dl.sourceforge.net/project/javadiff/javadiff/jdiff%20"${jdiff_version}"/jdiff-"${jdiff_version}".zip
+curl -kL -o jdiff.zip https://pilotfiber.dl.sourceforge.net/project/javadiff/javadiff/jdiff%20"${jdiff_version}"/jdiff-"${jdiff_version}".zip
 unzip jdiff.zip
 
 # gen xml for paper
