@@ -57,7 +57,7 @@ curl -kL -o jdiff.zip https://pilotfiber.dl.sourceforge.net/project/javadiff/jav
 unzip jdiff.zip
 
 # gen xml for paper
-get_maven_sources 'https://papermc.io/repo' 3 'com.destroystokyo.paper' 'paper-api' paper-sources.jar
+get_maven_sources 'https://papermc.io/repo' 3 'io.papermc.paper' 'paper-api' paper-sources.jar
 unzip paper-sources.jar -d paper-sources
 mkdir paper
 echo "package io.papermc.paper;" > paper-sources/io/papermc/paper/package-info.java
