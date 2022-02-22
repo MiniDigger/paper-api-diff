@@ -18,7 +18,7 @@ org.bukkit.World
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>Paper</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>Paper</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_org.bukkit.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -46,9 +46,9 @@ FIELDS
 <HR>
 <!-- End of nav bar -->
 <H2>
-Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html" target="_top"><tt>World</tt></A>
+Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html" target="_top"><tt>World</tt></A>
 </H2>
-<p><font size="+1">Removed interfaces <code>org.bukkit.RegionAccessor, org.bukkit.generator.WorldInfo</code>.<br> Added interface <code>org.bukkit.Keyed</code>.<br></font>
+<p><font size="+1">Removed interfaces <code>org.bukkit.RegionAccessor, org.bukkit.generator.WorldInfo, org.bukkit.persistence.PersistentDataHolder</code>.<br> Added interface <code>org.bukkit.Keyed</code>.<br></font>
 <a NAME="constructors"></a>
 <a NAME="methods"></a>
 <p>
@@ -80,6 +80,24 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
   <nobr><code>int</code>&nbsp;<A HREF="https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/World.html#getSimulationDistance()" target="_top"><tt>getSimulationDistance</tt></A>()</nobr>
   </TD>
   <TD VALIGN="TOP">Returns the simulation distance used for this world.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.getSpawnLimit_removed(org.bukkit.entity.SpawnCategory)"></A>
+  <nobr><code>int</code>&nbsp;<A HREF="https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/World.html#getSpawnLimit(org.bukkit.entity.SpawnCategory)" target="_top"><tt>getSpawnLimit</tt></A>(<code>SpawnCategory</code>)</nobr>
+  </TD>
+  <TD VALIGN="TOP">Gets the limit for number of <A HREF="https://papermc.io/javadocs/paper/1.18/SpawnCategory.html"><TT>SpawnCategory</TT></A> entities that can spawn in a chunk in
+ this world
+
+ </TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.getTicksPerSpawns_removed(org.bukkit.entity.SpawnCategory)"></A>
+  <nobr><code>long</code>&nbsp;<A HREF="https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/World.html#getTicksPerSpawns(org.bukkit.entity.SpawnCategory)" target="_top"><tt>getTicksPerSpawns</tt></A>(<code>SpawnCategory</code>)</nobr>
+  </TD>
+  <TD VALIGN="TOP">Gets the world's ticks per <A HREF="https://papermc.io/javadocs/paper/1.18/SpawnCategory.html"><TT>SpawnCategory</TT></A> mob spawns value
+ </TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
@@ -143,6 +161,37 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.playSound_removed(org.bukkit.entity.Entity, org.bukkit.Sound, float, float)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/World.html#playSound(org.bukkit.entity.Entity, org.bukkit.Sound, float, float)" target="_top"><tt>playSound</tt></A>(<code>Entity,</nobr> Sound<nobr>,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD VALIGN="TOP">Play a Sound at the location of the provided entity in the World.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.playSound_removed(org.bukkit.entity.Entity, org.bukkit.Sound, org.bukkit.SoundCategory, float, float)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/World.html#playSound(org.bukkit.entity.Entity, org.bukkit.Sound, org.bukkit.SoundCategory, float, float)" target="_top"><tt>playSound</tt></A>(<code>Entity,</nobr> Sound<nobr>,</nobr> SoundCategory<nobr>,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD VALIGN="TOP">Play a Sound at the location of the provided entity in the World.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.setSpawnLimit_removed(org.bukkit.entity.SpawnCategory, int)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/World.html#setSpawnLimit(org.bukkit.entity.SpawnCategory, int)" target="_top"><tt>setSpawnLimit</tt></A>(<code>SpawnCategory,</nobr> int<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD VALIGN="TOP">Sets the limit for number of <A HREF="https://papermc.io/javadocs/paper/1.18/SpawnCategory.html"><TT>SpawnCategory</TT></A> entities that can spawn in a chunk in
+ this world
+ </TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.setTicksPerSpawns_removed(org.bukkit.entity.SpawnCategory, int)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/World.html#setTicksPerSpawns(org.bukkit.entity.SpawnCategory, int)" target="_top"><tt>setTicksPerSpawns</tt></A>(<code>SpawnCategory,</nobr> int<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD VALIGN="TOP">Sets the world's ticks per <A HREF="https://papermc.io/javadocs/paper/1.18/SpawnCategory.html"><TT>SpawnCategory</TT></A> mob spawns value
+ </TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.setTicksPerWaterUndergroundCreatureSpawns_removed(int)"></A>
   <nobr><code>void</code>&nbsp;<A HREF="https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/World.html#setTicksPerWaterUndergroundCreatureSpawns(int)" target="_top"><tt>setTicksPerWaterUndergroundCreatureSpawns</tt></A>(<code>int</code>)</nobr>
   </TD>
@@ -169,14 +218,14 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.audiences_added()"></A>
-  <nobr><code>Iterable&lt;Audience&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#audiences()" target="_top"><tt>audiences</tt></A>()</nobr>
+  <nobr><code>Iterable&lt;Audience&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#audiences()" target="_top"><tt>audiences</tt></A>()</nobr>
   </TD>
   <TD>&nbsp;</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.createExplosion_added(org.bukkit.entity.Entity, float)"></A>
-  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#createExplosion(org.bukkit.entity.Entity, float)" target="_top"><tt>createExplosion</tt></A>(<code>Entity,</nobr> float<nobr><nobr></code>)</nobr>
+  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#createExplosion(org.bukkit.entity.Entity, float)" target="_top"><tt>createExplosion</tt></A>(<code>Entity,</nobr> float<nobr><nobr></code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Creates explosion at given entities location with given power and optionally
  setting blocks on fire, with the specified entity as the source.</TD>
@@ -184,7 +233,7 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.createExplosion_added(org.bukkit.entity.Entity, float, boolean)"></A>
-  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#createExplosion(org.bukkit.entity.Entity, float, boolean)" target="_top"><tt>createExplosion</tt></A>(<code>Entity,</nobr> float<nobr>,</nobr> boolean<nobr><nobr></code>)</nobr>
+  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#createExplosion(org.bukkit.entity.Entity, float, boolean)" target="_top"><tt>createExplosion</tt></A>(<code>Entity,</nobr> float<nobr>,</nobr> boolean<nobr><nobr></code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Creates explosion at given entities location with given power and optionally
  setting blocks on fire, with the specified entity as the source.</TD>
@@ -192,7 +241,7 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.createExplosion_added(org.bukkit.entity.Entity, float, boolean, boolean)"></A>
-  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#createExplosion(org.bukkit.entity.Entity, float, boolean, boolean)" target="_top"><tt>createExplosion</tt></A>(<code>Entity,</nobr> float<nobr>,</nobr> boolean<nobr>,</nobr> boolean<nobr><nobr></code>)</nobr>
+  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#createExplosion(org.bukkit.entity.Entity, float, boolean, boolean)" target="_top"><tt>createExplosion</tt></A>(<code>Entity,</nobr> float<nobr>,</nobr> boolean<nobr>,</nobr> boolean<nobr><nobr></code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Creates explosion at given entities location with given power and optionally
  setting blocks on fire, with the specified entity as the source.</TD>
@@ -200,14 +249,14 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.createExplosion_added(org.bukkit.entity.Entity, org.bukkit.Location, float)"></A>
-  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#createExplosion(org.bukkit.entity.Entity, org.bukkit.Location, float)" target="_top"><tt>createExplosion</tt></A>(<code>Entity,</nobr> Location<nobr>,</nobr> float<nobr><nobr></code>)</nobr>
+  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#createExplosion(org.bukkit.entity.Entity, org.bukkit.Location, float)" target="_top"><tt>createExplosion</tt></A>(<code>Entity,</nobr> Location<nobr>,</nobr> float<nobr><nobr></code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Creates explosion at given location with given power, with the specified entity as the source.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.createExplosion_added(org.bukkit.entity.Entity, org.bukkit.Location, float, boolean)"></A>
-  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#createExplosion(org.bukkit.entity.Entity, org.bukkit.Location, float, boolean)" target="_top"><tt>createExplosion</tt></A>(<code>Entity,</nobr> Location<nobr>,</nobr> float<nobr>,</nobr> boolean<nobr><nobr></code>)</nobr>
+  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#createExplosion(org.bukkit.entity.Entity, org.bukkit.Location, float, boolean)" target="_top"><tt>createExplosion</tt></A>(<code>Entity,</nobr> Location<nobr>,</nobr> float<nobr>,</nobr> boolean<nobr><nobr></code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Creates explosion at given location with given power and optionally
  setting blocks on fire, with the specified entity as the source.</TD>
@@ -215,7 +264,7 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.createExplosion_added(org.bukkit.entity.Entity, org.bukkit.Location, float, boolean, boolean)"></A>
-  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#createExplosion(org.bukkit.entity.Entity, org.bukkit.Location, float, boolean, boolean)" target="_top"><tt>createExplosion</tt></A>(<code>Entity,</nobr> Location<nobr>,</nobr> float<nobr>,</nobr> boolean<nobr>,</nobr> boolean<nobr><nobr></code>)</nobr>
+  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#createExplosion(org.bukkit.entity.Entity, org.bukkit.Location, float, boolean, boolean)" target="_top"><tt>createExplosion</tt></A>(<code>Entity,</nobr> Location<nobr>,</nobr> float<nobr>,</nobr> boolean<nobr>,</nobr> boolean<nobr><nobr></code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Creates explosion at given location with given power and optionally
  setting blocks on fire, with the specified entity as the source.</TD>
@@ -223,7 +272,7 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.doesBedWork_added()"></A>
-  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#doesBedWork()" target="_top"><tt>doesBedWork</tt></A>()</nobr>
+  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#doesBedWork()" target="_top"><tt>doesBedWork</tt></A>()</nobr>
   </TD>
   <TD VALIGN="TOP">Checks if beds work
 
@@ -232,7 +281,7 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.doesRespawnAnchorWork_added()"></A>
-  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#doesRespawnAnchorWork()" target="_top"><tt>doesRespawnAnchorWork</tt></A>()</nobr>
+  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#doesRespawnAnchorWork()" target="_top"><tt>doesRespawnAnchorWork</tt></A>()</nobr>
   </TD>
   <TD VALIGN="TOP">Checks if respawn anchors work
 
@@ -241,39 +290,39 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getBiome_added(int, int, int)"></A>
-  <nobr><code>Biome</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getBiome(int, int, int)" target="_top"><tt>getBiome</tt></A>(<code>int,</nobr> int<nobr>,</nobr> int<nobr><nobr></code>)</nobr>
+  <nobr><code>Biome</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getBiome(int, int, int)" target="_top"><tt>getBiome</tt></A>(<code>int,</nobr> int<nobr>,</nobr> int<nobr><nobr></code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Gets the biome for the given block coordinates.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getBlockAtKey_added(long)"></A>
-  <nobr><code>Block</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getBlockAtKey(long)" target="_top"><tt>getBlockAtKey</tt></A>(<code>long</code>)</nobr>
+  <nobr><code>Block</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getBlockAtKey(long)" target="_top"><tt>getBlockAtKey</tt></A>(<code>long</code>)</nobr>
   </TD>
-  <TD VALIGN="TOP">Gets the <A HREF="https://papermc.io/javadocs/paper/1.17/Block.html"><TT>Block</TT></A> at the given block key
+  <TD VALIGN="TOP">Gets the <A HREF="https://papermc.io/javadocs/paper/1.18/Block.html"><TT>Block</TT></A> at the given block key
 
  </TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getChunkAt_added(long)"></A>
-  <nobr><code>Chunk</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getChunkAt(long)" target="_top"><tt>getChunkAt</tt></A>(<code>long</code>)</nobr>
+  <nobr><code>Chunk</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getChunkAt(long)" target="_top"><tt>getChunkAt</tt></A>(<code>long</code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Gets the chunk at the specified chunk key, which is the X and Z packed into a long.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getChunkAtAsync_added(int, int, boolean, boolean)"></A>
-  <nobr><code>CompletableFuture&lt;Chunk&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getChunkAtAsync(int, int, boolean, boolean)" target="_top"><tt>getChunkAtAsync</tt></A>(<code>int,</nobr> int<nobr>,</nobr> boolean<nobr>,</nobr> boolean<nobr><nobr></code>)</nobr>
+  <nobr><code>CompletableFuture&lt;Chunk&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getChunkAtAsync(int, int, boolean, boolean)" target="_top"><tt>getChunkAtAsync</tt></A>(<code>int,</nobr> int<nobr>,</nobr> boolean<nobr>,</nobr> boolean<nobr><nobr></code>)</nobr>
   </TD>
   <TD>&nbsp;</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getChunkAtAsync_added(int, int)"></A>
-  <nobr><code>CompletableFuture&lt;Chunk&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getChunkAtAsync(int, int)" target="_top"><tt>getChunkAtAsync</tt></A>(<code>int,</nobr> int<nobr><nobr></code>)</nobr>
+  <nobr><code>CompletableFuture&lt;Chunk&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getChunkAtAsync(int, int)" target="_top"><tt>getChunkAtAsync</tt></A>(<code>int,</nobr> int<nobr><nobr></code>)</nobr>
   </TD>
-  <TD VALIGN="TOP">Requests a <A HREF="https://papermc.io/javadocs/paper/1.17/Chunk.html"><TT>Chunk</TT></A> to be loaded at the given coordinates
+  <TD VALIGN="TOP">Requests a <A HREF="https://papermc.io/javadocs/paper/1.18/Chunk.html"><TT>Chunk</TT></A> to be loaded at the given coordinates
 
  This method makes no guarantee on how fast the chunk will load,
  and will return the chunk to the callback at a later time.</TD>
@@ -281,9 +330,9 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getChunkAtAsync_added(int, int, boolean)"></A>
-  <nobr><code>CompletableFuture&lt;Chunk&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getChunkAtAsync(int, int, boolean)" target="_top"><tt>getChunkAtAsync</tt></A>(<code>int,</nobr> int<nobr>,</nobr> boolean<nobr><nobr></code>)</nobr>
+  <nobr><code>CompletableFuture&lt;Chunk&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getChunkAtAsync(int, int, boolean)" target="_top"><tt>getChunkAtAsync</tt></A>(<code>int,</nobr> int<nobr>,</nobr> boolean<nobr><nobr></code>)</nobr>
   </TD>
-  <TD VALIGN="TOP">Requests a <A HREF="https://papermc.io/javadocs/paper/1.17/Chunk.html"><TT>Chunk</TT></A> to be loaded at the given coordinates
+  <TD VALIGN="TOP">Requests a <A HREF="https://papermc.io/javadocs/paper/1.18/Chunk.html"><TT>Chunk</TT></A> to be loaded at the given coordinates
 
  This method makes no guarantee on how fast the chunk will load,
  and will return the chunk to the callback at a later time.</TD>
@@ -291,9 +340,9 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getChunkAtAsync_added(org.bukkit.Location)"></A>
-  <nobr><code>CompletableFuture&lt;Chunk&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getChunkAtAsync(org.bukkit.Location)" target="_top"><tt>getChunkAtAsync</tt></A>(<code>Location</code>)</nobr>
+  <nobr><code>CompletableFuture&lt;Chunk&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getChunkAtAsync(org.bukkit.Location)" target="_top"><tt>getChunkAtAsync</tt></A>(<code>Location</code>)</nobr>
   </TD>
-  <TD VALIGN="TOP">Requests a <A HREF="https://papermc.io/javadocs/paper/1.17/Chunk.html"><TT>Chunk</TT></A> to be loaded at the given coordinates
+  <TD VALIGN="TOP">Requests a <A HREF="https://papermc.io/javadocs/paper/1.18/Chunk.html"><TT>Chunk</TT></A> to be loaded at the given coordinates
 
  This method makes no guarantee on how fast the chunk will load,
  and will return the chunk to the callback at a later time.</TD>
@@ -301,9 +350,9 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getChunkAtAsync_added(org.bukkit.Location, boolean)"></A>
-  <nobr><code>CompletableFuture&lt;Chunk&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getChunkAtAsync(org.bukkit.Location, boolean)" target="_top"><tt>getChunkAtAsync</tt></A>(<code>Location,</nobr> boolean<nobr><nobr></code>)</nobr>
+  <nobr><code>CompletableFuture&lt;Chunk&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getChunkAtAsync(org.bukkit.Location, boolean)" target="_top"><tt>getChunkAtAsync</tt></A>(<code>Location,</nobr> boolean<nobr><nobr></code>)</nobr>
   </TD>
-  <TD VALIGN="TOP">Requests a <A HREF="https://papermc.io/javadocs/paper/1.17/Chunk.html"><TT>Chunk</TT></A> to be loaded at the given coordinates
+  <TD VALIGN="TOP">Requests a <A HREF="https://papermc.io/javadocs/paper/1.18/Chunk.html"><TT>Chunk</TT></A> to be loaded at the given coordinates
 
  This method makes no guarantee on how fast the chunk will load,
  and will return the chunk to the callback at a later time.</TD>
@@ -311,9 +360,9 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getChunkAtAsync_added(org.bukkit.block.Block)"></A>
-  <nobr><code>CompletableFuture&lt;Chunk&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getChunkAtAsync(org.bukkit.block.Block)" target="_top"><tt>getChunkAtAsync</tt></A>(<code>Block</code>)</nobr>
+  <nobr><code>CompletableFuture&lt;Chunk&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getChunkAtAsync(org.bukkit.block.Block)" target="_top"><tt>getChunkAtAsync</tt></A>(<code>Block</code>)</nobr>
   </TD>
-  <TD VALIGN="TOP">Requests a <A HREF="https://papermc.io/javadocs/paper/1.17/Chunk.html"><TT>Chunk</TT></A> to be loaded at the given coordinates
+  <TD VALIGN="TOP">Requests a <A HREF="https://papermc.io/javadocs/paper/1.18/Chunk.html"><TT>Chunk</TT></A> to be loaded at the given coordinates
 
  This method makes no guarantee on how fast the chunk will load,
  and will return the chunk to the callback at a later time.</TD>
@@ -321,9 +370,9 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getChunkAtAsync_added(org.bukkit.block.Block, boolean)"></A>
-  <nobr><code>CompletableFuture&lt;Chunk&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getChunkAtAsync(org.bukkit.block.Block, boolean)" target="_top"><tt>getChunkAtAsync</tt></A>(<code>Block,</nobr> boolean<nobr><nobr></code>)</nobr>
+  <nobr><code>CompletableFuture&lt;Chunk&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getChunkAtAsync(org.bukkit.block.Block, boolean)" target="_top"><tt>getChunkAtAsync</tt></A>(<code>Block,</nobr> boolean<nobr><nobr></code>)</nobr>
   </TD>
-  <TD VALIGN="TOP">Requests a <A HREF="https://papermc.io/javadocs/paper/1.17/Chunk.html"><TT>Chunk</TT></A> to be loaded at the given coordinates
+  <TD VALIGN="TOP">Requests a <A HREF="https://papermc.io/javadocs/paper/1.18/Chunk.html"><TT>Chunk</TT></A> to be loaded at the given coordinates
 
  This method makes no guarantee on how fast the chunk will load,
  and will return the chunk to the callback at a later time.</TD>
@@ -331,9 +380,9 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getChunkAtAsync_added(int, int, boolean, java.util.function.Consumer<org.bukkit.Chunk>)"></A>
-  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getChunkAtAsync(int, int, boolean, java.util.function.Consumer<org.bukkit.Chunk>)" target="_top"><tt>getChunkAtAsync</tt></A>(<code>int,</nobr> int<nobr>,</nobr> boolean<nobr>,</nobr> Consumer&lt;Chunk&gt;<nobr><nobr></code>)</nobr>
+  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getChunkAtAsync(int, int, boolean, java.util.function.Consumer<org.bukkit.Chunk>)" target="_top"><tt>getChunkAtAsync</tt></A>(<code>int,</nobr> int<nobr>,</nobr> boolean<nobr>,</nobr> Consumer&lt;Chunk&gt;<nobr><nobr></code>)</nobr>
   </TD>
-  <TD VALIGN="TOP">Requests a <A HREF="https://papermc.io/javadocs/paper/1.17/Chunk.html"><TT>Chunk</TT></A> to be loaded at the given coordinates
+  <TD VALIGN="TOP">Requests a <A HREF="https://papermc.io/javadocs/paper/1.18/Chunk.html"><TT>Chunk</TT></A> to be loaded at the given coordinates
 
  This method makes no guarantee on how fast the chunk will load,
  and will return the chunk to the callback at a later time.</TD>
@@ -341,9 +390,9 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getChunkAtAsync_added(int, int, java.util.function.Consumer<org.bukkit.Chunk>)"></A>
-  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getChunkAtAsync(int, int, java.util.function.Consumer<org.bukkit.Chunk>)" target="_top"><tt>getChunkAtAsync</tt></A>(<code>int,</nobr> int<nobr>,</nobr> Consumer&lt;Chunk&gt;<nobr><nobr></code>)</nobr>
+  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getChunkAtAsync(int, int, java.util.function.Consumer<org.bukkit.Chunk>)" target="_top"><tt>getChunkAtAsync</tt></A>(<code>int,</nobr> int<nobr>,</nobr> Consumer&lt;Chunk&gt;<nobr><nobr></code>)</nobr>
   </TD>
-  <TD VALIGN="TOP">Requests a <A HREF="https://papermc.io/javadocs/paper/1.17/Chunk.html"><TT>Chunk</TT></A> to be loaded at the given coordinates
+  <TD VALIGN="TOP">Requests a <A HREF="https://papermc.io/javadocs/paper/1.18/Chunk.html"><TT>Chunk</TT></A> to be loaded at the given coordinates
 
  This method makes no guarantee on how fast the chunk will load,
  and will return the chunk to the callback at a later time.</TD>
@@ -351,9 +400,9 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getChunkAtAsync_added(org.bukkit.Location, boolean, java.util.function.Consumer<org.bukkit.Chunk>)"></A>
-  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getChunkAtAsync(org.bukkit.Location, boolean, java.util.function.Consumer<org.bukkit.Chunk>)" target="_top"><tt>getChunkAtAsync</tt></A>(<code>Location,</nobr> boolean<nobr>,</nobr> Consumer&lt;Chunk&gt;<nobr><nobr></code>)</nobr>
+  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getChunkAtAsync(org.bukkit.Location, boolean, java.util.function.Consumer<org.bukkit.Chunk>)" target="_top"><tt>getChunkAtAsync</tt></A>(<code>Location,</nobr> boolean<nobr>,</nobr> Consumer&lt;Chunk&gt;<nobr><nobr></code>)</nobr>
   </TD>
-  <TD VALIGN="TOP">Requests a <A HREF="https://papermc.io/javadocs/paper/1.17/Chunk.html"><TT>Chunk</TT></A> to be loaded at the given <A HREF="https://papermc.io/javadocs/paper/1.17/Location.html"><TT>Location</TT></A>
+  <TD VALIGN="TOP">Requests a <A HREF="https://papermc.io/javadocs/paper/1.18/Chunk.html"><TT>Chunk</TT></A> to be loaded at the given <A HREF="https://papermc.io/javadocs/paper/1.18/Location.html"><TT>Location</TT></A>
 
  This method makes no guarantee on how fast the chunk will load,
  and will return the chunk to the callback at a later time.</TD>
@@ -361,9 +410,9 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getChunkAtAsync_added(org.bukkit.Location, java.util.function.Consumer<org.bukkit.Chunk>)"></A>
-  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getChunkAtAsync(org.bukkit.Location, java.util.function.Consumer<org.bukkit.Chunk>)" target="_top"><tt>getChunkAtAsync</tt></A>(<code>Location,</nobr> Consumer&lt;Chunk&gt;<nobr><nobr></code>)</nobr>
+  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getChunkAtAsync(org.bukkit.Location, java.util.function.Consumer<org.bukkit.Chunk>)" target="_top"><tt>getChunkAtAsync</tt></A>(<code>Location,</nobr> Consumer&lt;Chunk&gt;<nobr><nobr></code>)</nobr>
   </TD>
-  <TD VALIGN="TOP">Requests a <A HREF="https://papermc.io/javadocs/paper/1.17/Chunk.html"><TT>Chunk</TT></A> to be loaded at the given <A HREF="https://papermc.io/javadocs/paper/1.17/Location.html"><TT>Location</TT></A>
+  <TD VALIGN="TOP">Requests a <A HREF="https://papermc.io/javadocs/paper/1.18/Chunk.html"><TT>Chunk</TT></A> to be loaded at the given <A HREF="https://papermc.io/javadocs/paper/1.18/Location.html"><TT>Location</TT></A>
 
  This method makes no guarantee on how fast the chunk will load,
  and will return the chunk to the callback at a later time.</TD>
@@ -371,9 +420,9 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getChunkAtAsync_added(org.bukkit.block.Block, boolean, java.util.function.Consumer<org.bukkit.Chunk>)"></A>
-  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getChunkAtAsync(org.bukkit.block.Block, boolean, java.util.function.Consumer<org.bukkit.Chunk>)" target="_top"><tt>getChunkAtAsync</tt></A>(<code>Block,</nobr> boolean<nobr>,</nobr> Consumer&lt;Chunk&gt;<nobr><nobr></code>)</nobr>
+  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getChunkAtAsync(org.bukkit.block.Block, boolean, java.util.function.Consumer<org.bukkit.Chunk>)" target="_top"><tt>getChunkAtAsync</tt></A>(<code>Block,</nobr> boolean<nobr>,</nobr> Consumer&lt;Chunk&gt;<nobr><nobr></code>)</nobr>
   </TD>
-  <TD VALIGN="TOP">Requests <A HREF="https://papermc.io/javadocs/paper/1.17/Chunk.html"><TT>Chunk</TT></A> to be loaded that contains the given <A HREF="https://papermc.io/javadocs/paper/1.17/Block.html"><TT>Block</TT></A>
+  <TD VALIGN="TOP">Requests <A HREF="https://papermc.io/javadocs/paper/1.18/Chunk.html"><TT>Chunk</TT></A> to be loaded that contains the given <A HREF="https://papermc.io/javadocs/paper/1.18/Block.html"><TT>Block</TT></A>
 
  This method makes no guarantee on how fast the chunk will load,
  and will return the chunk to the callback at a later time.</TD>
@@ -381,9 +430,9 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getChunkAtAsync_added(org.bukkit.block.Block, java.util.function.Consumer<org.bukkit.Chunk>)"></A>
-  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getChunkAtAsync(org.bukkit.block.Block, java.util.function.Consumer<org.bukkit.Chunk>)" target="_top"><tt>getChunkAtAsync</tt></A>(<code>Block,</nobr> Consumer&lt;Chunk&gt;<nobr><nobr></code>)</nobr>
+  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getChunkAtAsync(org.bukkit.block.Block, java.util.function.Consumer<org.bukkit.Chunk>)" target="_top"><tt>getChunkAtAsync</tt></A>(<code>Block,</nobr> Consumer&lt;Chunk&gt;<nobr><nobr></code>)</nobr>
   </TD>
-  <TD VALIGN="TOP">Requests <A HREF="https://papermc.io/javadocs/paper/1.17/Chunk.html"><TT>Chunk</TT></A> to be loaded that contains the given <A HREF="https://papermc.io/javadocs/paper/1.17/Block.html"><TT>Block</TT></A>
+  <TD VALIGN="TOP">Requests <A HREF="https://papermc.io/javadocs/paper/1.18/Chunk.html"><TT>Chunk</TT></A> to be loaded that contains the given <A HREF="https://papermc.io/javadocs/paper/1.18/Block.html"><TT>Block</TT></A>
 
  This method makes no guarantee on how fast the chunk will load,
  and will return the chunk to the callback at a later time.</TD>
@@ -391,9 +440,9 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getChunkAtAsync_added(int, int, org.bukkit.World.ChunkLoadCallback)"></A>
-  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getChunkAtAsync(int, int, org.bukkit.World.ChunkLoadCallback)" target="_top"><tt>getChunkAtAsync</tt></A>(<code>int,</nobr> int<nobr>,</nobr> ChunkLoadCallback<nobr><nobr></code>)</nobr>
+  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getChunkAtAsync(int, int, org.bukkit.World.ChunkLoadCallback)" target="_top"><tt>getChunkAtAsync</tt></A>(<code>int,</nobr> int<nobr>,</nobr> ChunkLoadCallback<nobr><nobr></code>)</nobr>
   </TD>
-  <TD VALIGN="TOP">Requests a <A HREF="https://papermc.io/javadocs/paper/1.17/Chunk.html"><TT>Chunk</TT></A> to be loaded at the given coordinates
+  <TD VALIGN="TOP">Requests a <A HREF="https://papermc.io/javadocs/paper/1.18/Chunk.html"><TT>Chunk</TT></A> to be loaded at the given coordinates
 
  This method makes no guarantee on how fast the chunk will load,
  and will return the chunk to the callback at a later time.</TD>
@@ -401,9 +450,9 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getChunkAtAsync_added(org.bukkit.Location, org.bukkit.World.ChunkLoadCallback)"></A>
-  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getChunkAtAsync(org.bukkit.Location, org.bukkit.World.ChunkLoadCallback)" target="_top"><tt>getChunkAtAsync</tt></A>(<code>Location,</nobr> ChunkLoadCallback<nobr><nobr></code>)</nobr>
+  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getChunkAtAsync(org.bukkit.Location, org.bukkit.World.ChunkLoadCallback)" target="_top"><tt>getChunkAtAsync</tt></A>(<code>Location,</nobr> ChunkLoadCallback<nobr><nobr></code>)</nobr>
   </TD>
-  <TD VALIGN="TOP">Requests a <A HREF="https://papermc.io/javadocs/paper/1.17/Chunk.html"><TT>Chunk</TT></A> to be loaded at the given <A HREF="https://papermc.io/javadocs/paper/1.17/Location.html"><TT>Location</TT></A>
+  <TD VALIGN="TOP">Requests a <A HREF="https://papermc.io/javadocs/paper/1.18/Chunk.html"><TT>Chunk</TT></A> to be loaded at the given <A HREF="https://papermc.io/javadocs/paper/1.18/Location.html"><TT>Location</TT></A>
 
  This method makes no guarantee on how fast the chunk will load,
  and will return the chunk to the callback at a later time.</TD>
@@ -411,9 +460,9 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getChunkAtAsync_added(org.bukkit.block.Block, org.bukkit.World.ChunkLoadCallback)"></A>
-  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getChunkAtAsync(org.bukkit.block.Block, org.bukkit.World.ChunkLoadCallback)" target="_top"><tt>getChunkAtAsync</tt></A>(<code>Block,</nobr> ChunkLoadCallback<nobr><nobr></code>)</nobr>
+  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getChunkAtAsync(org.bukkit.block.Block, org.bukkit.World.ChunkLoadCallback)" target="_top"><tt>getChunkAtAsync</tt></A>(<code>Block,</nobr> ChunkLoadCallback<nobr><nobr></code>)</nobr>
   </TD>
-  <TD VALIGN="TOP">Requests <A HREF="https://papermc.io/javadocs/paper/1.17/Chunk.html"><TT>Chunk</TT></A> to be loaded that contains the given <A HREF="https://papermc.io/javadocs/paper/1.17/Block.html"><TT>Block</TT></A>
+  <TD VALIGN="TOP">Requests <A HREF="https://papermc.io/javadocs/paper/1.18/Chunk.html"><TT>Chunk</TT></A> to be loaded that contains the given <A HREF="https://papermc.io/javadocs/paper/1.18/Block.html"><TT>Block</TT></A>
 
  This method makes no guarantee on how fast the chunk will load,
  and will return the chunk to the callback at a later time.</TD>
@@ -421,9 +470,9 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getChunkAtAsyncUrgently_added(int, int)"></A>
-  <nobr><code>CompletableFuture&lt;Chunk&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getChunkAtAsyncUrgently(int, int)" target="_top"><tt>getChunkAtAsyncUrgently</tt></A>(<code>int,</nobr> int<nobr><nobr></code>)</nobr>
+  <nobr><code>CompletableFuture&lt;Chunk&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getChunkAtAsyncUrgently(int, int)" target="_top"><tt>getChunkAtAsyncUrgently</tt></A>(<code>int,</nobr> int<nobr><nobr></code>)</nobr>
   </TD>
-  <TD VALIGN="TOP">Requests a <A HREF="https://papermc.io/javadocs/paper/1.17/Chunk.html"><TT>Chunk</TT></A> to be loaded at the given coordinates
+  <TD VALIGN="TOP">Requests a <A HREF="https://papermc.io/javadocs/paper/1.18/Chunk.html"><TT>Chunk</TT></A> to be loaded at the given coordinates
 
  This method makes no guarantee on how fast the chunk will load,
  and will return the chunk to the callback at a later time.</TD>
@@ -431,9 +480,9 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getChunkAtAsyncUrgently_added(org.bukkit.Location)"></A>
-  <nobr><code>CompletableFuture&lt;Chunk&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getChunkAtAsyncUrgently(org.bukkit.Location)" target="_top"><tt>getChunkAtAsyncUrgently</tt></A>(<code>Location</code>)</nobr>
+  <nobr><code>CompletableFuture&lt;Chunk&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getChunkAtAsyncUrgently(org.bukkit.Location)" target="_top"><tt>getChunkAtAsyncUrgently</tt></A>(<code>Location</code>)</nobr>
   </TD>
-  <TD VALIGN="TOP">Requests a <A HREF="https://papermc.io/javadocs/paper/1.17/Chunk.html"><TT>Chunk</TT></A> to be loaded at the given coordinates
+  <TD VALIGN="TOP">Requests a <A HREF="https://papermc.io/javadocs/paper/1.18/Chunk.html"><TT>Chunk</TT></A> to be loaded at the given coordinates
 
  This method makes no guarantee on how fast the chunk will load,
  and will return the chunk to the callback at a later time.</TD>
@@ -441,9 +490,9 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getChunkAtAsyncUrgently_added(org.bukkit.Location, boolean)"></A>
-  <nobr><code>CompletableFuture&lt;Chunk&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getChunkAtAsyncUrgently(org.bukkit.Location, boolean)" target="_top"><tt>getChunkAtAsyncUrgently</tt></A>(<code>Location,</nobr> boolean<nobr><nobr></code>)</nobr>
+  <nobr><code>CompletableFuture&lt;Chunk&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getChunkAtAsyncUrgently(org.bukkit.Location, boolean)" target="_top"><tt>getChunkAtAsyncUrgently</tt></A>(<code>Location,</nobr> boolean<nobr><nobr></code>)</nobr>
   </TD>
-  <TD VALIGN="TOP">Requests a <A HREF="https://papermc.io/javadocs/paper/1.17/Chunk.html"><TT>Chunk</TT></A> to be loaded at the given coordinates
+  <TD VALIGN="TOP">Requests a <A HREF="https://papermc.io/javadocs/paper/1.18/Chunk.html"><TT>Chunk</TT></A> to be loaded at the given coordinates
 
  This method makes no guarantee on how fast the chunk will load,
  and will return the chunk to the callback at a later time.</TD>
@@ -451,9 +500,9 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getChunkAtAsyncUrgently_added(org.bukkit.block.Block)"></A>
-  <nobr><code>CompletableFuture&lt;Chunk&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getChunkAtAsyncUrgently(org.bukkit.block.Block)" target="_top"><tt>getChunkAtAsyncUrgently</tt></A>(<code>Block</code>)</nobr>
+  <nobr><code>CompletableFuture&lt;Chunk&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getChunkAtAsyncUrgently(org.bukkit.block.Block)" target="_top"><tt>getChunkAtAsyncUrgently</tt></A>(<code>Block</code>)</nobr>
   </TD>
-  <TD VALIGN="TOP">Requests a <A HREF="https://papermc.io/javadocs/paper/1.17/Chunk.html"><TT>Chunk</TT></A> to be loaded at the given coordinates
+  <TD VALIGN="TOP">Requests a <A HREF="https://papermc.io/javadocs/paper/1.18/Chunk.html"><TT>Chunk</TT></A> to be loaded at the given coordinates
 
  This method makes no guarantee on how fast the chunk will load,
  and will return the chunk to the callback at a later time.</TD>
@@ -461,9 +510,9 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getChunkAtAsyncUrgently_added(org.bukkit.block.Block, boolean)"></A>
-  <nobr><code>CompletableFuture&lt;Chunk&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getChunkAtAsyncUrgently(org.bukkit.block.Block, boolean)" target="_top"><tt>getChunkAtAsyncUrgently</tt></A>(<code>Block,</nobr> boolean<nobr><nobr></code>)</nobr>
+  <nobr><code>CompletableFuture&lt;Chunk&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getChunkAtAsyncUrgently(org.bukkit.block.Block, boolean)" target="_top"><tt>getChunkAtAsyncUrgently</tt></A>(<code>Block,</nobr> boolean<nobr><nobr></code>)</nobr>
   </TD>
-  <TD VALIGN="TOP">Requests a <A HREF="https://papermc.io/javadocs/paper/1.17/Chunk.html"><TT>Chunk</TT></A> to be loaded at the given coordinates
+  <TD VALIGN="TOP">Requests a <A HREF="https://papermc.io/javadocs/paper/1.18/Chunk.html"><TT>Chunk</TT></A> to be loaded at the given coordinates
 
  This method makes no guarantee on how fast the chunk will load,
  and will return the chunk to the callback at a later time.</TD>
@@ -471,21 +520,21 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getChunkCount_added()"></A>
-  <nobr><code>int</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getChunkCount()" target="_top"><tt>getChunkCount</tt></A>()</nobr>
+  <nobr><code>int</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getChunkCount()" target="_top"><tt>getChunkCount</tt></A>()</nobr>
   </TD>
   <TD VALIGN="TOP">@return The amount of Chunks in this world</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getCoordinateScale_added()"></A>
-  <nobr><code>double</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getCoordinateScale()" target="_top"><tt>getCoordinateScale</tt></A>()</nobr>
+  <nobr><code>double</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getCoordinateScale()" target="_top"><tt>getCoordinateScale</tt></A>()</nobr>
   </TD>
   <TD VALIGN="TOP">Gets the coordinate scaling of this world.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getEntity_added(java.util.UUID)"></A>
-  <nobr><code>Entity</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getEntity(java.util.UUID)" target="_top"><tt>getEntity</tt></A>(<code>UUID</code>)</nobr>
+  <nobr><code>Entity</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getEntity(java.util.UUID)" target="_top"><tt>getEntity</tt></A>(<code>UUID</code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Gets an entity in this world by its UUID
 
@@ -494,58 +543,58 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getEntityCount_added()"></A>
-  <nobr><code>int</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getEntityCount()" target="_top"><tt>getEntityCount</tt></A>()</nobr>
+  <nobr><code>int</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getEntityCount()" target="_top"><tt>getEntityCount</tt></A>()</nobr>
   </TD>
   <TD VALIGN="TOP">@return The amount of Entities in this world</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getEnvironment_added()"></A>
-  <nobr><code>Environment</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getEnvironment()" target="_top"><tt>getEnvironment</tt></A>()</nobr>
+  <nobr><code>Environment</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getEnvironment()" target="_top"><tt>getEnvironment</tt></A>()</nobr>
   </TD>
-  <TD VALIGN="TOP">Gets the <A HREF="https://papermc.io/javadocs/paper/1.17/Environment.html"><TT>Environment</TT></A> type of this world
+  <TD VALIGN="TOP">Gets the <A HREF="https://papermc.io/javadocs/paper/1.18/Environment.html"><TT>Environment</TT></A> type of this world
 
  </TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getHighestBlockAt_added(int, int, com.destroystokyo.paper.HeightmapType)"></A>
-  <nobr><code>Block</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getHighestBlockAt(int, int, com.destroystokyo.paper.HeightmapType)" target="_top"><tt>getHighestBlockAt</tt></A>(<code>int,</nobr> int<nobr>,</nobr> HeightmapType<nobr><nobr></code>)</nobr>
+  <nobr><code>Block</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getHighestBlockAt(int, int, com.destroystokyo.paper.HeightmapType)" target="_top"><tt>getHighestBlockAt</tt></A>(<code>int,</nobr> int<nobr>,</nobr> HeightmapType<nobr><nobr></code>)</nobr>
   </TD>
-  <TD VALIGN="TOP">Returns the highest <A HREF="https://papermc.io/javadocs/paper/1.17/Block.html"><TT>Block</TT></A> at the specified block coordinates that match the specified heightmap's conditions.</TD>
+  <TD VALIGN="TOP">Returns the highest <A HREF="https://papermc.io/javadocs/paper/1.18/Block.html"><TT>Block</TT></A> at the specified block coordinates that match the specified heightmap's conditions.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getHighestBlockAt_added(org.bukkit.Location, com.destroystokyo.paper.HeightmapType)"></A>
-  <nobr><code>Block</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getHighestBlockAt(org.bukkit.Location, com.destroystokyo.paper.HeightmapType)" target="_top"><tt>getHighestBlockAt</tt></A>(<code>Location,</nobr> HeightmapType<nobr><nobr></code>)</nobr>
+  <nobr><code>Block</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getHighestBlockAt(org.bukkit.Location, com.destroystokyo.paper.HeightmapType)" target="_top"><tt>getHighestBlockAt</tt></A>(<code>Location,</nobr> HeightmapType<nobr><nobr></code>)</nobr>
   </TD>
-  <TD VALIGN="TOP">Returns the highest <A HREF="https://papermc.io/javadocs/paper/1.17/Block.html"><TT>Block</TT></A> at the specified block coordinates that match the specified heightmap's conditions.</TD>
+  <TD VALIGN="TOP">Returns the highest <A HREF="https://papermc.io/javadocs/paper/1.18/Block.html"><TT>Block</TT></A> at the specified block coordinates that match the specified heightmap's conditions.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getHighestBlockYAt_added(org.bukkit.Location, com.destroystokyo.paper.HeightmapType)"></A>
-  <nobr><code>int</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getHighestBlockYAt(org.bukkit.Location, com.destroystokyo.paper.HeightmapType)" target="_top"><tt>getHighestBlockYAt</tt></A>(<code>Location,</nobr> HeightmapType<nobr><nobr></code>)</nobr>
+  <nobr><code>int</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getHighestBlockYAt(org.bukkit.Location, com.destroystokyo.paper.HeightmapType)" target="_top"><tt>getHighestBlockYAt</tt></A>(<code>Location,</nobr> HeightmapType<nobr><nobr></code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Returns the highest block's y-coordinate at the specified block coordinates that match the specified heightmap's conditions.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getHighestBlockYAt_added(int, int, com.destroystokyo.paper.HeightmapType)"></A>
-  <nobr><code>int</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getHighestBlockYAt(int, int, com.destroystokyo.paper.HeightmapType)" target="_top"><tt>getHighestBlockYAt</tt></A>(<code>int,</nobr> int<nobr>,</nobr> HeightmapType<nobr><nobr></code>)</nobr>
+  <nobr><code>int</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getHighestBlockYAt(int, int, com.destroystokyo.paper.HeightmapType)" target="_top"><tt>getHighestBlockYAt</tt></A>(<code>int,</nobr> int<nobr>,</nobr> HeightmapType<nobr><nobr></code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Returns the highest block's y-coordinate at the specified block coordinates that match the specified heightmap's conditions.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getInfiniburn_added()"></A>
-  <nobr><code>Collection&lt;Material&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getInfiniburn()" target="_top"><tt>getInfiniburn</tt></A>()</nobr>
+  <nobr><code>Collection&lt;Material&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getInfiniburn()" target="_top"><tt>getInfiniburn</tt></A>()</nobr>
   </TD>
   <TD VALIGN="TOP">Gets the collection of materials that burn infinitely in this world.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getKey_added()"></A>
-  <nobr><code>NamespacedKey</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getKey()" target="_top"><tt>getKey</tt></A>()</nobr>
+  <nobr><code>NamespacedKey</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getKey()" target="_top"><tt>getKey</tt></A>()</nobr>
   </TD>
   <TD VALIGN="TOP">Get the world's key
 
@@ -554,37 +603,37 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getLocationAtKey_added(long)"></A>
-  <nobr><code>Location</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getLocationAtKey(long)" target="_top"><tt>getLocationAtKey</tt></A>(<code>long</code>)</nobr>
+  <nobr><code>Location</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getLocationAtKey(long)" target="_top"><tt>getLocationAtKey</tt></A>(<code>long</code>)</nobr>
   </TD>
-  <TD VALIGN="TOP">Gets the <A HREF="https://papermc.io/javadocs/paper/1.17/Location.html"><TT>Location</TT></A> at the given block key
+  <TD VALIGN="TOP">Gets the <A HREF="https://papermc.io/javadocs/paper/1.18/Location.html"><TT>Location</TT></A> at the given block key
 
  </TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getMaxHeight_added()"></A>
-  <nobr><code>int</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getMaxHeight()" target="_top"><tt>getMaxHeight</tt></A>()</nobr>
+  <nobr><code>int</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getMaxHeight()" target="_top"><tt>getMaxHeight</tt></A>()</nobr>
   </TD>
   <TD VALIGN="TOP">Gets the maximum height of this world.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getMinHeight_added()"></A>
-  <nobr><code>int</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getMinHeight()" target="_top"><tt>getMinHeight</tt></A>()</nobr>
+  <nobr><code>int</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getMinHeight()" target="_top"><tt>getMinHeight</tt></A>()</nobr>
   </TD>
   <TD VALIGN="TOP">Gets the minimum height of this world.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getMoonPhase_added()"></A>
-  <nobr><code>MoonPhase</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getMoonPhase()" target="_top"><tt>getMoonPhase</tt></A>()</nobr>
+  <nobr><code>MoonPhase</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getMoonPhase()" target="_top"><tt>getMoonPhase</tt></A>()</nobr>
   </TD>
   <TD VALIGN="TOP">@return the current moon phase at the current time in the world</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getName_added()"></A>
-  <nobr><code>String</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getName()" target="_top"><tt>getName</tt></A>()</nobr>
+  <nobr><code>String</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getName()" target="_top"><tt>getName</tt></A>()</nobr>
   </TD>
   <TD VALIGN="TOP">Gets the unique name of this world
 
@@ -593,7 +642,7 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getNearbyEntitiesByType_added(java.lang.Class<? extends T>, org.bukkit.Location, double)"></A>
-  <nobr><code>Collection&lt;T&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getNearbyEntitiesByType(java.lang.Class<? extends T>, org.bukkit.Location, double)" target="_top"><tt>getNearbyEntitiesByType</tt></A>(<code>Class&lt;?,</nobr> extends<nobr>,</nobr> T&gt;<nobr>,</nobr> Location<nobr>,</nobr> double<nobr><nobr></code>)</nobr>
+  <nobr><code>Collection&lt;T&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getNearbyEntitiesByType(java.lang.Class<? extends T>, org.bukkit.Location, double)" target="_top"><tt>getNearbyEntitiesByType</tt></A>(<code>Class&lt;?,</nobr> extends<nobr>,</nobr> T&gt;<nobr>,</nobr> Location<nobr>,</nobr> double<nobr><nobr></code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Gets all nearby entities of the specified type, within the specified radius (bounding box)
  </TD>
@@ -601,7 +650,7 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getNearbyEntitiesByType_added(java.lang.Class<? extends T>, org.bukkit.Location, double, double)"></A>
-  <nobr><code>Collection&lt;T&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getNearbyEntitiesByType(java.lang.Class<? extends T>, org.bukkit.Location, double, double)" target="_top"><tt>getNearbyEntitiesByType</tt></A>(<code>Class&lt;?,</nobr> extends<nobr>,</nobr> T&gt;<nobr>,</nobr> Location<nobr>,</nobr> double<nobr>,</nobr> double<nobr><nobr></code>)</nobr>
+  <nobr><code>Collection&lt;T&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getNearbyEntitiesByType(java.lang.Class<? extends T>, org.bukkit.Location, double, double)" target="_top"><tt>getNearbyEntitiesByType</tt></A>(<code>Class&lt;?,</nobr> extends<nobr>,</nobr> T&gt;<nobr>,</nobr> Location<nobr>,</nobr> double<nobr>,</nobr> double<nobr><nobr></code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Gets all nearby entities of the specified type, within the specified radius, with x and x radius matching (bounding box)
  </TD>
@@ -609,7 +658,7 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getNearbyEntitiesByType_added(java.lang.Class<? extends T>, org.bukkit.Location, double, double, double)"></A>
-  <nobr><code>Collection&lt;T&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getNearbyEntitiesByType(java.lang.Class<? extends T>, org.bukkit.Location, double, double, double)" target="_top"><tt>getNearbyEntitiesByType</tt></A>(<code>Class&lt;?,</nobr> extends<nobr>,</nobr> T&gt;<nobr>,</nobr> Location<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> double<nobr><nobr></code>)</nobr>
+  <nobr><code>Collection&lt;T&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getNearbyEntitiesByType(java.lang.Class<? extends T>, org.bukkit.Location, double, double, double)" target="_top"><tt>getNearbyEntitiesByType</tt></A>(<code>Class&lt;?,</nobr> extends<nobr>,</nobr> T&gt;<nobr>,</nobr> Location<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> double<nobr><nobr></code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Gets all nearby entities of the specified type, within the specified radius (bounding box)
  </TD>
@@ -617,7 +666,7 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getNearbyEntitiesByType_added(java.lang.Class<? extends T>, org.bukkit.Location, double, double, java.util.function.Predicate<T>)"></A>
-  <nobr><code>Collection&lt;T&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getNearbyEntitiesByType(java.lang.Class<? extends T>, org.bukkit.Location, double, double, java.util.function.Predicate<T>)" target="_top"><tt>getNearbyEntitiesByType</tt></A>(<code>Class&lt;?,</nobr> extends<nobr>,</nobr> T&gt;<nobr>,</nobr> Location<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> Predicate&lt;T&gt;<nobr><nobr></code>)</nobr>
+  <nobr><code>Collection&lt;T&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getNearbyEntitiesByType(java.lang.Class<? extends T>, org.bukkit.Location, double, double, java.util.function.Predicate<T>)" target="_top"><tt>getNearbyEntitiesByType</tt></A>(<code>Class&lt;?,</nobr> extends<nobr>,</nobr> T&gt;<nobr>,</nobr> Location<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> Predicate&lt;T&gt;<nobr><nobr></code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Gets all nearby entities of the specified type, within the specified radius, with x and x radius matching (bounding box)
  </TD>
@@ -625,7 +674,7 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getNearbyEntitiesByType_added(java.lang.Class<? extends T>, org.bukkit.Location, double, java.util.function.Predicate<T>)"></A>
-  <nobr><code>Collection&lt;T&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getNearbyEntitiesByType(java.lang.Class<? extends T>, org.bukkit.Location, double, java.util.function.Predicate<T>)" target="_top"><tt>getNearbyEntitiesByType</tt></A>(<code>Class&lt;?,</nobr> extends<nobr>,</nobr> T&gt;<nobr>,</nobr> Location<nobr>,</nobr> double<nobr>,</nobr> Predicate&lt;T&gt;<nobr><nobr></code>)</nobr>
+  <nobr><code>Collection&lt;T&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getNearbyEntitiesByType(java.lang.Class<? extends T>, org.bukkit.Location, double, java.util.function.Predicate<T>)" target="_top"><tt>getNearbyEntitiesByType</tt></A>(<code>Class&lt;?,</nobr> extends<nobr>,</nobr> T&gt;<nobr>,</nobr> Location<nobr>,</nobr> double<nobr>,</nobr> Predicate&lt;T&gt;<nobr><nobr></code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Gets all nearby entities of the specified type, within the specified radius (bounding box)
  </TD>
@@ -633,7 +682,7 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getNearbyEntitiesByType_added(java.lang.Class<? extends org.bukkit.entity.Entity>, org.bukkit.Location, double, double, double, java.util.function.Predicate<T>)"></A>
-  <nobr><code>Collection&lt;T&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getNearbyEntitiesByType(java.lang.Class<? extends org.bukkit.entity.Entity>, org.bukkit.Location, double, double, double, java.util.function.Predicate<T>)" target="_top"><tt>getNearbyEntitiesByType</tt></A>(<code>Class&lt;Entity&gt;,</nobr> Location<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> Predicate&lt;T&gt;<nobr><nobr></code>)</nobr>
+  <nobr><code>Collection&lt;T&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getNearbyEntitiesByType(java.lang.Class<? extends org.bukkit.entity.Entity>, org.bukkit.Location, double, double, double, java.util.function.Predicate<T>)" target="_top"><tt>getNearbyEntitiesByType</tt></A>(<code>Class&lt;Entity&gt;,</nobr> Location<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> Predicate&lt;T&gt;<nobr><nobr></code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Gets all nearby entities of the specified type, within the specified radius (bounding box)
  </TD>
@@ -641,7 +690,7 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getNearbyLivingEntities_added(org.bukkit.Location, double)"></A>
-  <nobr><code>Collection&lt;LivingEntity&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getNearbyLivingEntities(org.bukkit.Location, double)" target="_top"><tt>getNearbyLivingEntities</tt></A>(<code>Location,</nobr> double<nobr><nobr></code>)</nobr>
+  <nobr><code>Collection&lt;LivingEntity&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getNearbyLivingEntities(org.bukkit.Location, double)" target="_top"><tt>getNearbyLivingEntities</tt></A>(<code>Location,</nobr> double<nobr><nobr></code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Gets nearby players within the specified radius (bounding box)
  </TD>
@@ -649,7 +698,7 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getNearbyLivingEntities_added(org.bukkit.Location, double, double)"></A>
-  <nobr><code>Collection&lt;LivingEntity&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getNearbyLivingEntities(org.bukkit.Location, double, double)" target="_top"><tt>getNearbyLivingEntities</tt></A>(<code>Location,</nobr> double<nobr>,</nobr> double<nobr><nobr></code>)</nobr>
+  <nobr><code>Collection&lt;LivingEntity&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getNearbyLivingEntities(org.bukkit.Location, double, double)" target="_top"><tt>getNearbyLivingEntities</tt></A>(<code>Location,</nobr> double<nobr>,</nobr> double<nobr><nobr></code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Gets nearby players within the specified radius (bounding box)
  </TD>
@@ -657,7 +706,7 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getNearbyLivingEntities_added(org.bukkit.Location, double, double, double)"></A>
-  <nobr><code>Collection&lt;LivingEntity&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getNearbyLivingEntities(org.bukkit.Location, double, double, double)" target="_top"><tt>getNearbyLivingEntities</tt></A>(<code>Location,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> double<nobr><nobr></code>)</nobr>
+  <nobr><code>Collection&lt;LivingEntity&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getNearbyLivingEntities(org.bukkit.Location, double, double, double)" target="_top"><tt>getNearbyLivingEntities</tt></A>(<code>Location,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> double<nobr><nobr></code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Gets nearby players within the specified radius (bounding box)
  </TD>
@@ -665,7 +714,7 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getNearbyLivingEntities_added(org.bukkit.Location, double, double, double, java.util.function.Predicate<org.bukkit.entity.LivingEntity>)"></A>
-  <nobr><code>Collection&lt;LivingEntity&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getNearbyLivingEntities(org.bukkit.Location, double, double, double, java.util.function.Predicate<org.bukkit.entity.LivingEntity>)" target="_top"><tt>getNearbyLivingEntities</tt></A>(<code>Location,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> Predicate&lt;LivingEntity&gt;<nobr><nobr></code>)</nobr>
+  <nobr><code>Collection&lt;LivingEntity&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getNearbyLivingEntities(org.bukkit.Location, double, double, double, java.util.function.Predicate<org.bukkit.entity.LivingEntity>)" target="_top"><tt>getNearbyLivingEntities</tt></A>(<code>Location,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> Predicate&lt;LivingEntity&gt;<nobr><nobr></code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Gets nearby players within the specified radius (bounding box)
  </TD>
@@ -673,7 +722,7 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getNearbyLivingEntities_added(org.bukkit.Location, double, double, java.util.function.Predicate<org.bukkit.entity.LivingEntity>)"></A>
-  <nobr><code>Collection&lt;LivingEntity&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getNearbyLivingEntities(org.bukkit.Location, double, double, java.util.function.Predicate<org.bukkit.entity.LivingEntity>)" target="_top"><tt>getNearbyLivingEntities</tt></A>(<code>Location,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> Predicate&lt;LivingEntity&gt;<nobr><nobr></code>)</nobr>
+  <nobr><code>Collection&lt;LivingEntity&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getNearbyLivingEntities(org.bukkit.Location, double, double, java.util.function.Predicate<org.bukkit.entity.LivingEntity>)" target="_top"><tt>getNearbyLivingEntities</tt></A>(<code>Location,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> Predicate&lt;LivingEntity&gt;<nobr><nobr></code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Gets nearby players within the specified radius (bounding box)
  </TD>
@@ -681,7 +730,7 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getNearbyLivingEntities_added(org.bukkit.Location, double, java.util.function.Predicate<org.bukkit.entity.LivingEntity>)"></A>
-  <nobr><code>Collection&lt;LivingEntity&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getNearbyLivingEntities(org.bukkit.Location, double, java.util.function.Predicate<org.bukkit.entity.LivingEntity>)" target="_top"><tt>getNearbyLivingEntities</tt></A>(<code>Location,</nobr> double<nobr>,</nobr> Predicate&lt;LivingEntity&gt;<nobr><nobr></code>)</nobr>
+  <nobr><code>Collection&lt;LivingEntity&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getNearbyLivingEntities(org.bukkit.Location, double, java.util.function.Predicate<org.bukkit.entity.LivingEntity>)" target="_top"><tt>getNearbyLivingEntities</tt></A>(<code>Location,</nobr> double<nobr>,</nobr> Predicate&lt;LivingEntity&gt;<nobr><nobr></code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Gets nearby players within the specified radius (bounding box)
  </TD>
@@ -689,7 +738,7 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getNearbyPlayers_added(org.bukkit.Location, double)"></A>
-  <nobr><code>Collection&lt;Player&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getNearbyPlayers(org.bukkit.Location, double)" target="_top"><tt>getNearbyPlayers</tt></A>(<code>Location,</nobr> double<nobr><nobr></code>)</nobr>
+  <nobr><code>Collection&lt;Player&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getNearbyPlayers(org.bukkit.Location, double)" target="_top"><tt>getNearbyPlayers</tt></A>(<code>Location,</nobr> double<nobr><nobr></code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Gets nearby players within the specified radius (bounding box)
  </TD>
@@ -697,7 +746,7 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getNearbyPlayers_added(org.bukkit.Location, double, double)"></A>
-  <nobr><code>Collection&lt;Player&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getNearbyPlayers(org.bukkit.Location, double, double)" target="_top"><tt>getNearbyPlayers</tt></A>(<code>Location,</nobr> double<nobr>,</nobr> double<nobr><nobr></code>)</nobr>
+  <nobr><code>Collection&lt;Player&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getNearbyPlayers(org.bukkit.Location, double, double)" target="_top"><tt>getNearbyPlayers</tt></A>(<code>Location,</nobr> double<nobr>,</nobr> double<nobr><nobr></code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Gets nearby players within the specified radius (bounding box)
  </TD>
@@ -705,7 +754,7 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getNearbyPlayers_added(org.bukkit.Location, double, double, double)"></A>
-  <nobr><code>Collection&lt;Player&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getNearbyPlayers(org.bukkit.Location, double, double, double)" target="_top"><tt>getNearbyPlayers</tt></A>(<code>Location,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> double<nobr><nobr></code>)</nobr>
+  <nobr><code>Collection&lt;Player&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getNearbyPlayers(org.bukkit.Location, double, double, double)" target="_top"><tt>getNearbyPlayers</tt></A>(<code>Location,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> double<nobr><nobr></code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Gets nearby players within the specified radius (bounding box)
  </TD>
@@ -713,7 +762,7 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getNearbyPlayers_added(org.bukkit.Location, double, double, double, java.util.function.Predicate<org.bukkit.entity.Player>)"></A>
-  <nobr><code>Collection&lt;Player&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getNearbyPlayers(org.bukkit.Location, double, double, double, java.util.function.Predicate<org.bukkit.entity.Player>)" target="_top"><tt>getNearbyPlayers</tt></A>(<code>Location,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> Predicate&lt;Player&gt;<nobr><nobr></code>)</nobr>
+  <nobr><code>Collection&lt;Player&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getNearbyPlayers(org.bukkit.Location, double, double, double, java.util.function.Predicate<org.bukkit.entity.Player>)" target="_top"><tt>getNearbyPlayers</tt></A>(<code>Location,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> Predicate&lt;Player&gt;<nobr><nobr></code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Gets nearby players within the specified radius (bounding box)
  </TD>
@@ -721,7 +770,7 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getNearbyPlayers_added(org.bukkit.Location, double, double, java.util.function.Predicate<org.bukkit.entity.Player>)"></A>
-  <nobr><code>Collection&lt;Player&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getNearbyPlayers(org.bukkit.Location, double, double, java.util.function.Predicate<org.bukkit.entity.Player>)" target="_top"><tt>getNearbyPlayers</tt></A>(<code>Location,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> Predicate&lt;Player&gt;<nobr><nobr></code>)</nobr>
+  <nobr><code>Collection&lt;Player&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getNearbyPlayers(org.bukkit.Location, double, double, java.util.function.Predicate<org.bukkit.entity.Player>)" target="_top"><tt>getNearbyPlayers</tt></A>(<code>Location,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> Predicate&lt;Player&gt;<nobr><nobr></code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Gets nearby players within the specified radius (bounding box)
  </TD>
@@ -729,7 +778,7 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getNearbyPlayers_added(org.bukkit.Location, double, java.util.function.Predicate<org.bukkit.entity.Player>)"></A>
-  <nobr><code>Collection&lt;Player&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getNearbyPlayers(org.bukkit.Location, double, java.util.function.Predicate<org.bukkit.entity.Player>)" target="_top"><tt>getNearbyPlayers</tt></A>(<code>Location,</nobr> double<nobr>,</nobr> Predicate&lt;Player&gt;<nobr><nobr></code>)</nobr>
+  <nobr><code>Collection&lt;Player&gt;</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getNearbyPlayers(org.bukkit.Location, double, java.util.function.Predicate<org.bukkit.entity.Player>)" target="_top"><tt>getNearbyPlayers</tt></A>(<code>Location,</nobr> double<nobr>,</nobr> Predicate&lt;Player&gt;<nobr><nobr></code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Gets nearby players within the specified radius (bounding box)
  </TD>
@@ -737,42 +786,42 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getNoTickViewDistance_added()"></A>
-  <nobr><code>int</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getNoTickViewDistance()" target="_top"><tt>getNoTickViewDistance</tt></A>()</nobr>
+  <nobr><code>int</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getNoTickViewDistance()" target="_top"><tt>getNoTickViewDistance</tt></A>()</nobr>
   </TD>
   <TD VALIGN="TOP">Returns the no-tick view distance for this world.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getPlayerCount_added()"></A>
-  <nobr><code>int</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getPlayerCount()" target="_top"><tt>getPlayerCount</tt></A>()</nobr>
+  <nobr><code>int</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getPlayerCount()" target="_top"><tt>getPlayerCount</tt></A>()</nobr>
   </TD>
   <TD VALIGN="TOP">@return The amount of Players in this world</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getSeed_added()"></A>
-  <nobr><code>long</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getSeed()" target="_top"><tt>getSeed</tt></A>()</nobr>
+  <nobr><code>long</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getSeed()" target="_top"><tt>getSeed</tt></A>()</nobr>
   </TD>
   <TD VALIGN="TOP">Gets the Seed for this world.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getTickableTileEntityCount_added()"></A>
-  <nobr><code>int</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getTickableTileEntityCount()" target="_top"><tt>getTickableTileEntityCount</tt></A>()</nobr>
+  <nobr><code>int</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getTickableTileEntityCount()" target="_top"><tt>getTickableTileEntityCount</tt></A>()</nobr>
   </TD>
   <TD VALIGN="TOP">@return The amount of Tickable Tile Entities in this world</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getTileEntityCount_added()"></A>
-  <nobr><code>int</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getTileEntityCount()" target="_top"><tt>getTileEntityCount</tt></A>()</nobr>
+  <nobr><code>int</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getTileEntityCount()" target="_top"><tt>getTileEntityCount</tt></A>()</nobr>
   </TD>
   <TD VALIGN="TOP">@return The amount of Tile Entities in this world</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.getUID_added()"></A>
-  <nobr><code>UUID</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#getUID()" target="_top"><tt>getUID</tt></A>()</nobr>
+  <nobr><code>UUID</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getUID()" target="_top"><tt>getUID</tt></A>()</nobr>
   </TD>
   <TD VALIGN="TOP">Gets the Unique ID of this world
 
@@ -781,7 +830,7 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.hasBedrockCeiling_added()"></A>
-  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#hasBedrockCeiling()" target="_top"><tt>hasBedrockCeiling</tt></A>()</nobr>
+  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#hasBedrockCeiling()" target="_top"><tt>hasBedrockCeiling</tt></A>()</nobr>
   </TD>
   <TD VALIGN="TOP">Checks if the world has a bedrock ceiling
 
@@ -790,7 +839,7 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.hasSkylight_added()"></A>
-  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#hasSkylight()" target="_top"><tt>hasSkylight</tt></A>()</nobr>
+  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#hasSkylight()" target="_top"><tt>hasSkylight</tt></A>()</nobr>
   </TD>
   <TD VALIGN="TOP">Checks if the world has skylight access
 
@@ -799,15 +848,15 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.isChunkGenerated_added(long)"></A>
-  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#isChunkGenerated(long)" target="_top"><tt>isChunkGenerated</tt></A>(<code>long</code>)</nobr>
+  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#isChunkGenerated(long)" target="_top"><tt>isChunkGenerated</tt></A>(<code>long</code>)</nobr>
   </TD>
-  <TD VALIGN="TOP">Checks if a <A HREF="https://papermc.io/javadocs/paper/1.17/Chunk.html"><TT>Chunk</TT></A> has been generated at the specified chunk key,
+  <TD VALIGN="TOP">Checks if a <A HREF="https://papermc.io/javadocs/paper/1.18/Chunk.html"><TT>Chunk</TT></A> has been generated at the specified chunk key,
  which is the X and Z packed into a long.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.isDayTime_added()"></A>
-  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#isDayTime()" target="_top"><tt>isDayTime</tt></A>()</nobr>
+  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#isDayTime()" target="_top"><tt>isDayTime</tt></A>()</nobr>
   </TD>
   <TD VALIGN="TOP">Check if it is currently daytime in this world
 
@@ -816,7 +865,7 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.isFixedTime_added()"></A>
-  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#isFixedTime()" target="_top"><tt>isFixedTime</tt></A>()</nobr>
+  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#isFixedTime()" target="_top"><tt>isFixedTime</tt></A>()</nobr>
   </TD>
   <TD VALIGN="TOP">Checks if this world has a fixed time
 
@@ -825,7 +874,7 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.isUltrawarm_added()"></A>
-  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#isUltrawarm()" target="_top"><tt>isUltrawarm</tt></A>()</nobr>
+  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#isUltrawarm()" target="_top"><tt>isUltrawarm</tt></A>()</nobr>
   </TD>
   <TD VALIGN="TOP">Checks if the world:
  <ul>
@@ -839,7 +888,7 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.lineOfSightExists_added(org.bukkit.Location, org.bukkit.Location)"></A>
-  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#lineOfSightExists(org.bukkit.Location, org.bukkit.Location)" target="_top"><tt>lineOfSightExists</tt></A>(<code>Location,</nobr> Location<nobr><nobr></code>)</nobr>
+  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#lineOfSightExists(org.bukkit.Location, org.bukkit.Location)" target="_top"><tt>lineOfSightExists</tt></A>(<code>Location,</nobr> Location<nobr><nobr></code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Tell whether a line of sight exists between the given locations
  </TD>
@@ -847,14 +896,14 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.locateNearestBiome_added(org.bukkit.Location, org.bukkit.block.Biome, int)"></A>
-  <nobr><code>Location</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#locateNearestBiome(org.bukkit.Location, org.bukkit.block.Biome, int)" target="_top"><tt>locateNearestBiome</tt></A>(<code>Location,</nobr> Biome<nobr>,</nobr> int<nobr><nobr></code>)</nobr>
+  <nobr><code>Location</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#locateNearestBiome(org.bukkit.Location, org.bukkit.block.Biome, int)" target="_top"><tt>locateNearestBiome</tt></A>(<code>Location,</nobr> Biome<nobr>,</nobr> int<nobr><nobr></code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Locates the nearest biome based on an origin, biome type, and radius to search.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.locateNearestBiome_added(org.bukkit.Location, org.bukkit.block.Biome, int, int)"></A>
-  <nobr><code>Location</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#locateNearestBiome(org.bukkit.Location, org.bukkit.block.Biome, int, int)" target="_top"><tt>locateNearestBiome</tt></A>(<code>Location,</nobr> Biome<nobr>,</nobr> int<nobr>,</nobr> int<nobr><nobr></code>)</nobr>
+  <nobr><code>Location</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#locateNearestBiome(org.bukkit.Location, org.bukkit.block.Biome, int, int)" target="_top"><tt>locateNearestBiome</tt></A>(<code>Location,</nobr> Biome<nobr>,</nobr> int<nobr>,</nobr> int<nobr><nobr></code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Locates the nearest biome based on an origin, biome type, and radius to search
  and step
@@ -864,7 +913,7 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.setBiome_added(int, int, int, org.bukkit.block.Biome)"></A>
-  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#setBiome(int, int, int, org.bukkit.block.Biome)" target="_top"><tt>setBiome</tt></A>(<code>int,</nobr> int<nobr>,</nobr> int<nobr>,</nobr> Biome<nobr><nobr></code>)</nobr>
+  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#setBiome(int, int, int, org.bukkit.block.Biome)" target="_top"><tt>setBiome</tt></A>(<code>int,</nobr> int<nobr>,</nobr> int<nobr>,</nobr> Biome<nobr><nobr></code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Sets the biome for the given block coordinates
 
@@ -873,82 +922,82 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.setNoTickViewDistance_added(int)"></A>
-  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#setNoTickViewDistance(int)" target="_top"><tt>setNoTickViewDistance</tt></A>(<code>int</code>)</nobr>
+  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#setNoTickViewDistance(int)" target="_top"><tt>setNoTickViewDistance</tt></A>(<code>int</code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Sets the no-tick view distance for this world.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.setViewDistance_added(int)"></A>
-  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#setViewDistance(int)" target="_top"><tt>setViewDistance</tt></A>(<code>int</code>)</nobr>
+  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#setViewDistance(int)" target="_top"><tt>setViewDistance</tt></A>(<code>int</code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Sets the view distance for this world.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.spawn_added(org.bukkit.Location, java.lang.Class<T>, org.bukkit.util.Consumer<T>, org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason)"></A>
-  <nobr><code>Entity</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#spawn(org.bukkit.Location, java.lang.Class<T>, org.bukkit.util.Consumer<T>, org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason)" target="_top"><tt>spawn</tt></A>(<code>Location,</nobr> Class&lt;T&gt;<nobr>,</nobr> Consumer&lt;T&gt;<nobr>,</nobr> SpawnReason<nobr><nobr></code>)</nobr>
+  <nobr><code>Entity</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#spawn(org.bukkit.Location, java.lang.Class<T>, org.bukkit.util.Consumer<T>, org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason)" target="_top"><tt>spawn</tt></A>(<code>Location,</nobr> Class&lt;T&gt;<nobr>,</nobr> Consumer&lt;T&gt;<nobr>,</nobr> SpawnReason<nobr><nobr></code>)</nobr>
   </TD>
   <TD>&nbsp;</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.spawn_added(org.bukkit.Location, java.lang.Class<T>, org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason)"></A>
-  <nobr><code>Entity</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#spawn(org.bukkit.Location, java.lang.Class<T>, org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason)" target="_top"><tt>spawn</tt></A>(<code>Location,</nobr> Class&lt;T&gt;<nobr>,</nobr> SpawnReason<nobr><nobr></code>)</nobr>
+  <nobr><code>Entity</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#spawn(org.bukkit.Location, java.lang.Class<T>, org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason)" target="_top"><tt>spawn</tt></A>(<code>Location,</nobr> Class&lt;T&gt;<nobr>,</nobr> SpawnReason<nobr><nobr></code>)</nobr>
   </TD>
   <TD>&nbsp;</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.spawn_added(org.bukkit.Location, java.lang.Class<T>, org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason, org.bukkit.util.Consumer<T>)"></A>
-  <nobr><code>Entity</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#spawn(org.bukkit.Location, java.lang.Class<T>, org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason, org.bukkit.util.Consumer<T>)" target="_top"><tt>spawn</tt></A>(<code>Location,</nobr> Class&lt;T&gt;<nobr>,</nobr> SpawnReason<nobr>,</nobr> Consumer&lt;T&gt;<nobr><nobr></code>)</nobr>
+  <nobr><code>Entity</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#spawn(org.bukkit.Location, java.lang.Class<T>, org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason, org.bukkit.util.Consumer<T>)" target="_top"><tt>spawn</tt></A>(<code>Location,</nobr> Class&lt;T&gt;<nobr>,</nobr> SpawnReason<nobr>,</nobr> Consumer&lt;T&gt;<nobr><nobr></code>)</nobr>
   </TD>
   <TD>&nbsp;</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.spawn_added(org.bukkit.Location, java.lang.Class<T>, org.bukkit.util.Consumer<T>)"></A>
-  <nobr><code>Entity</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#spawn(org.bukkit.Location, java.lang.Class<T>, org.bukkit.util.Consumer<T>)" target="_top"><tt>spawn</tt></A>(<code>Location,</nobr> Class&lt;T&gt;<nobr>,</nobr> Consumer&lt;T&gt;<nobr><nobr></code>)</nobr>
+  <nobr><code>Entity</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#spawn(org.bukkit.Location, java.lang.Class<T>, org.bukkit.util.Consumer<T>)" target="_top"><tt>spawn</tt></A>(<code>Location,</nobr> Class&lt;T&gt;<nobr>,</nobr> Consumer&lt;T&gt;<nobr><nobr></code>)</nobr>
   </TD>
-  <TD VALIGN="TOP">Spawn an entity of a specific class at the given <A HREF="https://papermc.io/javadocs/paper/1.17/Location.html"><TT>Location</TT></A>, with
+  <TD VALIGN="TOP">Spawn an entity of a specific class at the given <A HREF="https://papermc.io/javadocs/paper/1.18/Location.html"><TT>Location</TT></A>, with
  the supplied function run before the entity is added to the world.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.spawn_added(org.bukkit.Location, java.lang.Class<T>)"></A>
-  <nobr><code>Entity</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#spawn(org.bukkit.Location, java.lang.Class<T>)" target="_top"><tt>spawn</tt></A>(<code>Location,</nobr> Class&lt;T&gt;<nobr><nobr></code>)</nobr>
+  <nobr><code>Entity</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#spawn(org.bukkit.Location, java.lang.Class<T>)" target="_top"><tt>spawn</tt></A>(<code>Location,</nobr> Class&lt;T&gt;<nobr><nobr></code>)</nobr>
   </TD>
-  <TD VALIGN="TOP">Spawn an entity of a specific class at the given <A HREF="https://papermc.io/javadocs/paper/1.17/Location.html"><TT>Location</TT></A>
+  <TD VALIGN="TOP">Spawn an entity of a specific class at the given <A HREF="https://papermc.io/javadocs/paper/1.18/Location.html"><TT>Location</TT></A>
 
  </TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.spawnEntity_added(org.bukkit.Location, org.bukkit.entity.EntityType)"></A>
-  <nobr><code>Entity</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#spawnEntity(org.bukkit.Location, org.bukkit.entity.EntityType)" target="_top"><tt>spawnEntity</tt></A>(<code>Location,</nobr> EntityType<nobr><nobr></code>)</nobr>
+  <nobr><code>Entity</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#spawnEntity(org.bukkit.Location, org.bukkit.entity.EntityType)" target="_top"><tt>spawnEntity</tt></A>(<code>Location,</nobr> EntityType<nobr><nobr></code>)</nobr>
   </TD>
-  <TD VALIGN="TOP">Creates a entity at the given <A HREF="https://papermc.io/javadocs/paper/1.17/Location.html"><TT>Location</TT></A>
+  <TD VALIGN="TOP">Creates a entity at the given <A HREF="https://papermc.io/javadocs/paper/1.18/Location.html"><TT>Location</TT></A>
 
  </TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.spawnEntity_added(org.bukkit.Location, org.bukkit.entity.EntityType, org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason)"></A>
-  <nobr><code>Entity</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#spawnEntity(org.bukkit.Location, org.bukkit.entity.EntityType, org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason)" target="_top"><tt>spawnEntity</tt></A>(<code>Location,</nobr> EntityType<nobr>,</nobr> SpawnReason<nobr><nobr></code>)</nobr>
+  <nobr><code>Entity</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#spawnEntity(org.bukkit.Location, org.bukkit.entity.EntityType, org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason)" target="_top"><tt>spawnEntity</tt></A>(<code>Location,</nobr> EntityType<nobr>,</nobr> SpawnReason<nobr><nobr></code>)</nobr>
   </TD>
   <TD>&nbsp;</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.spawnEntity_added(org.bukkit.Location, org.bukkit.entity.EntityType, org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason, org.bukkit.util.Consumer<org.bukkit.entity.Entity>)"></A>
-  <nobr><code>Entity</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#spawnEntity(org.bukkit.Location, org.bukkit.entity.EntityType, org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason, org.bukkit.util.Consumer<org.bukkit.entity.Entity>)" target="_top"><tt>spawnEntity</tt></A>(<code>Location,</nobr> EntityType<nobr>,</nobr> SpawnReason<nobr>,</nobr> Consumer&lt;Entity&gt;<nobr><nobr></code>)</nobr>
+  <nobr><code>Entity</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#spawnEntity(org.bukkit.Location, org.bukkit.entity.EntityType, org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason, org.bukkit.util.Consumer<org.bukkit.entity.Entity>)" target="_top"><tt>spawnEntity</tt></A>(<code>Location,</nobr> EntityType<nobr>,</nobr> SpawnReason<nobr>,</nobr> Consumer&lt;Entity&gt;<nobr><nobr></code>)</nobr>
   </TD>
   <TD>&nbsp;</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.spawnParticle_added(org.bukkit.Particle, java.util.List<org.bukkit.entity.Player>, org.bukkit.entity.Player, double, double, double, int, double, double, double, double, T)"></A>
-  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#spawnParticle(org.bukkit.Particle, java.util.List<org.bukkit.entity.Player>, org.bukkit.entity.Player, double, double, double, int, double, double, double, double, T)" target="_top"><tt>spawnParticle</tt></A>(<code>Particle,</nobr> List&lt;Player&gt;<nobr>,</nobr> Player<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> int<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> T<nobr><nobr></code>)</nobr>
+  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#spawnParticle(org.bukkit.Particle, java.util.List<org.bukkit.entity.Player>, org.bukkit.entity.Player, double, double, double, int, double, double, double, double, T)" target="_top"><tt>spawnParticle</tt></A>(<code>Particle,</nobr> List&lt;Player&gt;<nobr>,</nobr> Player<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> int<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> T<nobr><nobr></code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Spawns the particle (the number of times specified by count)
  at the target location.</TD>
@@ -956,7 +1005,7 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.spawnParticle_added(org.bukkit.Particle, java.util.List<org.bukkit.entity.Player>, org.bukkit.entity.Player, double, double, double, int, double, double, double, double, T, boolean)"></A>
-  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#spawnParticle(org.bukkit.Particle, java.util.List<org.bukkit.entity.Player>, org.bukkit.entity.Player, double, double, double, int, double, double, double, double, T, boolean)" target="_top"><tt>spawnParticle</tt></A>(<code>Particle,</nobr> List&lt;Player&gt;<nobr>,</nobr> Player<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> int<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> T<nobr>,</nobr> boolean<nobr><nobr></code>)</nobr>
+  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#spawnParticle(org.bukkit.Particle, java.util.List<org.bukkit.entity.Player>, org.bukkit.entity.Player, double, double, double, int, double, double, double, double, T, boolean)" target="_top"><tt>spawnParticle</tt></A>(<code>Particle,</nobr> List&lt;Player&gt;<nobr>,</nobr> Player<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> int<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> T<nobr>,</nobr> boolean<nobr><nobr></code>)</nobr>
   </TD>
   <TD VALIGN="TOP">Spawns the particle (the number of times specified by count)
  at the target location.</TD>
@@ -971,20 +1020,252 @@ Interface org.bukkit.<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="org.bukkit.World.generateTree_changed(org.bukkit.Location, org.bukkit.TreeType, org.bukkit.BlockChangeDelegate)"></A>
-  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#generateTree(org.bukkit.Location, org.bukkit.TreeType, org.bukkit.BlockChangeDelegate)" target="_top"><tt>generateTree</tt></A>(<code>Location,</nobr> TreeType<nobr>,</nobr> BlockChangeDelegate<nobr><nobr></code>)  </nobr>
+  <A NAME="org.bukkit.World.getAmbientSpawnLimit_changed()"></A>
+  <nobr><code>int</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getAmbientSpawnLimit()" target="_top"><tt>getAmbientSpawnLimit</tt></A>()  </nobr>
   </TD>
   <TD VALIGN="TOP" WIDTH="30%">
 Change from deprecated to undeprecated.<br>
   </TD>
-  <TD VALIGN="TOP">Creates a tree at the given <A HREF="https://papermc.io/javadocs/paper/1.17/Location.html"><TT>Location</TT></A>
+  <TD VALIGN="TOP">Gets the limit for number of ambient mobs that can spawn in a chunk in
+ this world
+
+ </TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.getAnimalSpawnLimit_changed()"></A>
+  <nobr><code>int</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getAnimalSpawnLimit()" target="_top"><tt>getAnimalSpawnLimit</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change from deprecated to undeprecated.<br>
+  </TD>
+  <TD VALIGN="TOP">Gets the limit for number of animals that can spawn in a chunk in this
+ world
+
+ </TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.getMonsterSpawnLimit_changed()"></A>
+  <nobr><code>int</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getMonsterSpawnLimit()" target="_top"><tt>getMonsterSpawnLimit</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change from deprecated to undeprecated.<br>
+  </TD>
+  <TD VALIGN="TOP">Gets limit for number of monsters that can spawn in a chunk in this
+ world
+
+ </TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.getTicksPerAmbientSpawns_changed()"></A>
+  <nobr><code>long</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getTicksPerAmbientSpawns()" target="_top"><tt>getTicksPerAmbientSpawns</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change from deprecated to undeprecated.<br>
+  </TD>
+  <TD VALIGN="TOP">Gets the world's ticks per ambient mob spawns value
+ </TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.getTicksPerAnimalSpawns_changed()"></A>
+  <nobr><code>long</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getTicksPerAnimalSpawns()" target="_top"><tt>getTicksPerAnimalSpawns</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change from deprecated to undeprecated.<br>
+  </TD>
+  <TD VALIGN="TOP">Gets the world's ticks per animal spawns value
+ </TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.getTicksPerMonsterSpawns_changed()"></A>
+  <nobr><code>long</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getTicksPerMonsterSpawns()" target="_top"><tt>getTicksPerMonsterSpawns</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change from deprecated to undeprecated.<br>
+  </TD>
+  <TD VALIGN="TOP">Gets the world's ticks per monster spawns value
+ </TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.getTicksPerWaterAmbientSpawns_changed()"></A>
+  <nobr><code>long</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getTicksPerWaterAmbientSpawns()" target="_top"><tt>getTicksPerWaterAmbientSpawns</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change from deprecated to undeprecated.<br>
+  </TD>
+  <TD VALIGN="TOP">Gets the default ticks per water ambient mob spawns value.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.getTicksPerWaterSpawns_changed()"></A>
+  <nobr><code>long</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getTicksPerWaterSpawns()" target="_top"><tt>getTicksPerWaterSpawns</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change from deprecated to undeprecated.<br>
+  </TD>
+  <TD VALIGN="TOP">Gets the world's ticks per water mob spawns value
+ </TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.getWaterAmbientSpawnLimit_changed()"></A>
+  <nobr><code>int</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getWaterAmbientSpawnLimit()" target="_top"><tt>getWaterAmbientSpawnLimit</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change from deprecated to undeprecated.<br>
+  </TD>
+  <TD VALIGN="TOP">Gets user-specified limit for number of water ambient mobs that can spawn
+ in a chunk.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.getWaterAnimalSpawnLimit_changed()"></A>
+  <nobr><code>int</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#getWaterAnimalSpawnLimit()" target="_top"><tt>getWaterAnimalSpawnLimit</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change from deprecated to undeprecated.<br>
+  </TD>
+  <TD VALIGN="TOP">Gets the limit for number of water animals that can spawn in a chunk in
+ this world
+
+ </TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.setAmbientSpawnLimit_changed(int)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#setAmbientSpawnLimit(int)" target="_top"><tt>setAmbientSpawnLimit</tt></A>(<code>int</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change from deprecated to undeprecated.<br>
+  </TD>
+  <TD VALIGN="TOP">Sets the limit for number of ambient mobs that can spawn in a chunk in
+ this world
+ </TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.setAnimalSpawnLimit_changed(int)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#setAnimalSpawnLimit(int)" target="_top"><tt>setAnimalSpawnLimit</tt></A>(<code>int</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change from deprecated to undeprecated.<br>
+  </TD>
+  <TD VALIGN="TOP">Sets the limit for number of animals that can spawn in a chunk in this
+ world
+ </TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.setMonsterSpawnLimit_changed(int)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#setMonsterSpawnLimit(int)" target="_top"><tt>setMonsterSpawnLimit</tt></A>(<code>int</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change from deprecated to undeprecated.<br>
+  </TD>
+  <TD VALIGN="TOP">Sets the limit for number of monsters that can spawn in a chunk in this
+ world
+ </TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.setTicksPerAmbientSpawns_changed(int)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#setTicksPerAmbientSpawns(int)" target="_top"><tt>setTicksPerAmbientSpawns</tt></A>(<code>int</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change from deprecated to undeprecated.<br>
+  </TD>
+  <TD VALIGN="TOP">Sets the world's ticks per ambient mob spawns value
+ </TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.setTicksPerAnimalSpawns_changed(int)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#setTicksPerAnimalSpawns(int)" target="_top"><tt>setTicksPerAnimalSpawns</tt></A>(<code>int</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change from deprecated to undeprecated.<br>
+  </TD>
+  <TD VALIGN="TOP">Sets the world's ticks per animal spawns value
+ </TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.setTicksPerMonsterSpawns_changed(int)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#setTicksPerMonsterSpawns(int)" target="_top"><tt>setTicksPerMonsterSpawns</tt></A>(<code>int</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change from deprecated to undeprecated.<br>
+  </TD>
+  <TD VALIGN="TOP">Sets the world's ticks per monster spawns value
+ </TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.setTicksPerWaterAmbientSpawns_changed(int)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#setTicksPerWaterAmbientSpawns(int)" target="_top"><tt>setTicksPerWaterAmbientSpawns</tt></A>(<code>int</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change from deprecated to undeprecated.<br>
+  </TD>
+  <TD VALIGN="TOP">Sets the world's ticks per water ambient mob spawns value
+ </TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.setTicksPerWaterSpawns_changed(int)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#setTicksPerWaterSpawns(int)" target="_top"><tt>setTicksPerWaterSpawns</tt></A>(<code>int</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change from deprecated to undeprecated.<br>
+  </TD>
+  <TD VALIGN="TOP">Sets the world's ticks per water mob spawns value
+ </TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.setWaterAmbientSpawnLimit_changed(int)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#setWaterAmbientSpawnLimit(int)" target="_top"><tt>setWaterAmbientSpawnLimit</tt></A>(<code>int</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change from deprecated to undeprecated.<br>
+  </TD>
+  <TD VALIGN="TOP">Sets the limit for number of water ambient mobs that can spawn in a chunk
+ in this world
+ </TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.setWaterAnimalSpawnLimit_changed(int)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#setWaterAnimalSpawnLimit(int)" target="_top"><tt>setWaterAnimalSpawnLimit</tt></A>(<code>int</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change from deprecated to undeprecated.<br>
+  </TD>
+  <TD VALIGN="TOP">Sets the limit for number of water animals that can spawn in a chunk in
+ this world
+ </TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="org.bukkit.World.generateTree_changed(org.bukkit.Location, org.bukkit.TreeType, org.bukkit.BlockChangeDelegate)"></A>
+  <nobr><code>boolean</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#generateTree(org.bukkit.Location, org.bukkit.TreeType, org.bukkit.BlockChangeDelegate)" target="_top"><tt>generateTree</tt></A>(<code>Location,</nobr> TreeType<nobr>,</nobr> BlockChangeDelegate<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change from deprecated to undeprecated.<br>
+  </TD>
+  <TD VALIGN="TOP">Creates a tree at the given <A HREF="https://papermc.io/javadocs/paper/1.18/Location.html"><TT>Location</TT></A>
 
  </TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="org.bukkit.World.spawnParticle_changed(org.bukkit.Particle, double, double, double, int, double, double, double, double, T)"></A>
-  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html#spawnParticle(org.bukkit.Particle, double, double, double, int, double, double, double, double, T)" target="_top"><tt>spawnParticle</tt></A>(<code>Particle,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> int<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> T<nobr><nobr></code>)  </nobr>
+  <nobr><code>void</code>&nbsp;<A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html#spawnParticle(org.bukkit.Particle, double, double, double, int, double, double, double, double, T)" target="_top"><tt>spawnParticle</tt></A>(<code>Particle,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> int<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> double<nobr>,</nobr> T<nobr><nobr></code>)  </nobr>
   </TD>
   <TD VALIGN="TOP" WIDTH="30%">
 Changed from abstract to non-abstract.
@@ -1002,7 +1283,7 @@ Changed from abstract to non-abstract.
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="https://papermc.io/javadocs/paper/1.17/org/bukkit/World.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>Paper</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="https://papermc.io/javadocs/paper/1.18/org/bukkit/World.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>Paper</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_org.bukkit.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>

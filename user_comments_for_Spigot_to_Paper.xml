@@ -112,6 +112,24 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.Bukkit.createPlayerProfile_removed(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Bukkit.createPlayerProfile_removed(java.util.UUID)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Bukkit.createPlayerProfile_removed(java.util.UUID, java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.Bukkit.createProfile_added(java.lang.String)"/>
   <text>
     InsertCommentsHere
@@ -131,6 +149,18 @@
 </comment>
 <comment>
   <identifier id="org.bukkit.Bukkit.createVanillaChunkData_added(org.bukkit.World, int, int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Bukkit.getAmbientSpawnLimit_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Bukkit.getAnimalSpawnLimit_changed()"/>
   <text>
     InsertCommentsHere
   </text>
@@ -184,6 +214,12 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.Bukkit.getMonsterSpawnLimit_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.Bukkit.getMotd_changed()"/>
   <text>
     InsertCommentsHere
@@ -208,6 +244,24 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.Bukkit.getResourcePackHash_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Bukkit.getResourcePackPrompt_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Bukkit.getResourcePack_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.Bukkit.getShutdownMessage_changed()"/>
   <text>
     InsertCommentsHere
@@ -215,6 +269,12 @@
 </comment>
 <comment>
   <identifier id="org.bukkit.Bukkit.getSimulationDistance_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Bukkit.getSpawnLimit_removed(org.bukkit.entity.SpawnCategory)"/>
   <text>
     InsertCommentsHere
   </text>
@@ -238,7 +298,55 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.Bukkit.getTicksPerAmbientSpawns_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Bukkit.getTicksPerAnimalSpawns_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Bukkit.getTicksPerMonsterSpawns_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Bukkit.getTicksPerSpawns_removed(org.bukkit.entity.SpawnCategory)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Bukkit.getTicksPerWaterAmbientSpawns_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Bukkit.getTicksPerWaterSpawns_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.Bukkit.getTicksPerWaterUndergroundCreatureSpawns_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Bukkit.getWaterAmbientSpawnLimit_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Bukkit.getWaterAnimalSpawnLimit_changed()"/>
   <text>
     InsertCommentsHere
   </text>
@@ -251,6 +359,12 @@
 </comment>
 <comment>
   <identifier id="org.bukkit.Bukkit.getWorld_added(org.bukkit.NamespacedKey)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Bukkit.isResourcePackRequired_removed()"/>
   <text>
     InsertCommentsHere
   </text>
@@ -616,6 +730,12 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.Material.getDefaultAttributeModifiers_removed(org.bukkit.inventory.EquipmentSlot)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.Material.getItemAttributes_added(org.bukkit.inventory.EquipmentSlot)"/>
   <text>
     InsertCommentsHere
@@ -737,6 +857,12 @@
 </comment>
 <comment>
   <identifier id="org.bukkit.OfflinePlayer.getLastSeen_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.OfflinePlayer.getPlayerProfile_removed()"/>
   <text>
     InsertCommentsHere
   </text>
@@ -898,6 +1024,24 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.Server.createPlayerProfile_removed(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Server.createPlayerProfile_removed(java.util.UUID)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Server.createPlayerProfile_removed(java.util.UUID, java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.Server.createProfile_added(java.lang.String)"/>
   <text>
     InsertCommentsHere
@@ -917,6 +1061,18 @@
 </comment>
 <comment>
   <identifier id="org.bukkit.Server.createVanillaChunkData_added(org.bukkit.World, int, int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Server.getAmbientSpawnLimit_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Server.getAnimalSpawnLimit_changed()"/>
   <text>
     InsertCommentsHere
   </text>
@@ -970,6 +1126,12 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.Server.getMonsterSpawnLimit_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.Server.getMotd_changed()"/>
   <text>
     InsertCommentsHere
@@ -994,6 +1156,24 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.Server.getResourcePackHash_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Server.getResourcePackPrompt_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Server.getResourcePack_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.Server.getShutdownMessage_changed()"/>
   <text>
     InsertCommentsHere
@@ -1001,6 +1181,12 @@
 </comment>
 <comment>
   <identifier id="org.bukkit.Server.getSimulationDistance_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Server.getSpawnLimit_removed(org.bukkit.entity.SpawnCategory)"/>
   <text>
     InsertCommentsHere
   </text>
@@ -1024,7 +1210,55 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.Server.getTicksPerAmbientSpawns_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Server.getTicksPerAnimalSpawns_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Server.getTicksPerMonsterSpawns_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Server.getTicksPerSpawns_removed(org.bukkit.entity.SpawnCategory)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Server.getTicksPerWaterAmbientSpawns_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Server.getTicksPerWaterSpawns_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.Server.getTicksPerWaterUndergroundCreatureSpawns_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Server.getWaterAmbientSpawnLimit_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Server.getWaterAnimalSpawnLimit_changed()"/>
   <text>
     InsertCommentsHere
   </text>
@@ -1037,6 +1271,12 @@
 </comment>
 <comment>
   <identifier id="org.bukkit.Server.getWorld_added(org.bukkit.NamespacedKey)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.Server.isResourcePackRequired_removed()"/>
   <text>
     InsertCommentsHere
   </text>
@@ -1570,6 +1810,12 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.UnsafeValues.getDefaultAttributeModifiers_removed(org.bukkit.Material, org.bukkit.inventory.EquipmentSlot)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.UnsafeValues.getItemAttributes_added(org.bukkit.Material, org.bukkit.inventory.EquipmentSlot)"/>
   <text>
     InsertCommentsHere
@@ -1775,6 +2021,18 @@
 </comment>
 <comment>
   <identifier id="org.bukkit.World.generateTree_changed(org.bukkit.Location, org.bukkit.TreeType, org.bukkit.BlockChangeDelegate)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.getAmbientSpawnLimit_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.getAnimalSpawnLimit_changed()"/>
   <text>
     InsertCommentsHere
   </text>
@@ -2020,6 +2278,12 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.World.getMonsterSpawnLimit_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.World.getMoonPhase_added()"/>
   <text>
     InsertCommentsHere
@@ -2164,7 +2428,49 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.World.getSpawnLimit_removed(org.bukkit.entity.SpawnCategory)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.World.getTickableTileEntityCount_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.getTicksPerAmbientSpawns_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.getTicksPerAnimalSpawns_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.getTicksPerMonsterSpawns_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.getTicksPerSpawns_removed(org.bukkit.entity.SpawnCategory)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.getTicksPerWaterAmbientSpawns_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.getTicksPerWaterSpawns_changed()"/>
   <text>
     InsertCommentsHere
   </text>
@@ -2183,6 +2489,18 @@
 </comment>
 <comment>
   <identifier id="org.bukkit.World.getUID_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.getWaterAmbientSpawnLimit_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.getWaterAnimalSpawnLimit_changed()"/>
   <text>
     InsertCommentsHere
   </text>
@@ -2278,13 +2596,85 @@
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.World.playSound_removed(org.bukkit.entity.Entity, org.bukkit.Sound, float, float)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.playSound_removed(org.bukkit.entity.Entity, org.bukkit.Sound, org.bukkit.SoundCategory, float, float)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.setAmbientSpawnLimit_changed(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.setAnimalSpawnLimit_changed(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.World.setBiome_added(int, int, int, org.bukkit.block.Biome)"/>
   <text>
     InsertCommentsHere
   </text>
 </comment>
 <comment>
+  <identifier id="org.bukkit.World.setMonsterSpawnLimit_changed(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
   <identifier id="org.bukkit.World.setNoTickViewDistance_added(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.setSpawnLimit_removed(org.bukkit.entity.SpawnCategory, int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.setTicksPerAmbientSpawns_changed(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.setTicksPerAnimalSpawns_changed(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.setTicksPerMonsterSpawns_changed(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.setTicksPerSpawns_removed(org.bukkit.entity.SpawnCategory, int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.setTicksPerWaterAmbientSpawns_changed(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.setTicksPerWaterSpawns_changed(int)"/>
   <text>
     InsertCommentsHere
   </text>
@@ -2297,6 +2687,18 @@
 </comment>
 <comment>
   <identifier id="org.bukkit.World.setViewDistance_added(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.setWaterAmbientSpawnLimit_changed(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.bukkit.World.setWaterAnimalSpawnLimit_changed(int)"/>
   <text>
     InsertCommentsHere
   </text>
